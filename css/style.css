@@ -9,13 +9,15 @@ body{
 header{
     margin:0;
     padding:0;
-    background-color: #65CCFF;
+    background-color: #000000;
+    color: #818181;
+    
     
 }
 footer{
     margin:0;
     padding:0;
-    background-color: #59737F;
+    background-color: #000000;
     /*background-color: #32667F;*/
     display: flex;
     justify-content: center;
@@ -40,15 +42,20 @@ h2{
 h3{
     font-size: 1.9rem;
 }
-nav{
+nav, footer{
     text-align:center;
-    background-color: #59737F;
+    border-bottom: #a59075 1px solid;
+    border-top: #a59075 1px solid;
+}
+nav{
+
 }
 nav ul{
     padding: 5px;
 }
 nav button{
-    border-radius: 20px;
+    height: 6em;
+    width: 9em;
     background-color: #8EB8CC;
     margin: auto;
 }
@@ -66,6 +73,99 @@ p{
     width: 60%;
     margin: auto;
 }
+
+ /* The side navigation menu */
+ .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    margin: 0;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+} 
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    padding: 1em;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+a{
+    cursor: pointer;
+}
+
+#brandName{
+    display: absolute;
+    left: 50%;
+    margin-top: -.75em;
+    position: absolute top;
+}
+
 @media only screen and (max-width: 768px){
     body{
         font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
@@ -89,12 +189,7 @@ p{
         padding:2%;
         
     }
-    #home-button{
-        display:none;
-    }
-    #email-button{
-        display:none;
-    }
+
     main{
         width: 95%;
         margin: auto;

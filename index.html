@@ -28,22 +28,28 @@
 
 </head>
 
-<body id="wrapper">
-
+<body >
+    
     <header>
+        <div class="container hamburger" onclick="openNav();myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+        </div> 
         <h1 id="brandName">Caf&#233; Techn&#233;</h1>
         <h2 id="whatWeDo">Web Design & Development</h2>
-        <nav>
+        <nav id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <ul>
-                <a><button id="home-button">Home</button></a>
-                <a><button>Call</button></a>
-                <a><button id="email-button">E-mail</button></a>
+                <a><span id="home-button">Home</span></a>
+                <a><span>Call</span></a>
+                <a><span id="email-button">E-mail</span></a>
             </ul>
         </nav>
     </header>
 
 
-    <main>
+    <main id="wrapper">
         
         <h3>A Philosophy of Accessibility</h3>
         <p><span id="accessibility-tagline">When nobody is left behind, we all move foreward together!</span></p>
