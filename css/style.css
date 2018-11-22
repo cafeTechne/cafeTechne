@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Bellefair|Lato');
 body{
     margin:0;
@@ -21,6 +22,12 @@ footer{
     justify-content: center;
     border-top: 1px solid #69604d;
     border-bottom: 1px solid #69604d;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
 }
 main{
     margin:0;
@@ -46,7 +53,6 @@ h3{
     font-size: 1.9rem;
 }
 nav, footer{
-    text-align:center;
     border-bottom: #a59075 1px solid;
     border-top: #a59075 1px solid;
 }
@@ -97,7 +103,7 @@ p{
 
 /* The navigation menu links */
 .sidenav a {
-    padding: 8px 8px 8px 0px;
+    padding: 8px 8px 8px 8px;
     text-decoration: none;
     font-size: 25px;
     color: #eef0e7;
@@ -113,6 +119,7 @@ p{
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
     color: #8bb9b9;
+    padding: 8px;
 }
 
 /* Position and style the close button (top right corner) */
@@ -127,7 +134,7 @@ p{
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
     transition: margin-left .5s;
-    padding: 20px;
+    
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -235,4 +242,19 @@ a{
         font-size: 1.2725rem;
         margin-bottom: 7px;
     }
+}
+footer img{
+    width: 48px;
+    height: 48px;
+    margin: 5px;
+}
+.icon-twitter{
+    font-size: 2em;
+}
+.icon{
+    font-size: 2.5rem;
+    margin-left: 1rem;
+}
+.navigationText{
+    padding-left: 1.75rem;
 }
