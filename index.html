@@ -30,29 +30,37 @@
 
 </head>
 
-<body >
-    
+<body>
+
     <header>
         <div class="container hamburger" onclick="openNav();myFunction(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-        </div> 
-        <h1 id="brandName">Caf&#233; Techn&#233;</h1>
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <a href="index.html">
+            <h1 id="brandName">Caf&#233; Techn&#233;</h1>
+        </a>
+        <hr class="contentDivider">
         <h2 id="whatWeDo">Web Design & Development</h2>
         <nav id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <ul>
                 <a><span class="icon-home3"></span><span class="navigationText">Home</span></a>
                 <a><span class="icon-phone"></span><span class="navigationText">Call</span></a>
                 <a><span class="icon-envelope-o"></span><span class="navigationText">E-mail</span></a>
-                <a><span class="icon-magic-wand"></span><span class="navigationText"></span></a>
-                <a><span class="icon-power"></span><span class="navigationText"></span></a>
-                <a><span class="icon-terminal"></span><span class="navigationText"></span></a>
+                <a><span class="icon-magic-wand"></span><span class="navigationText">Services</span></a>
+                <a><span class="icon-power"></span><span class="navigationText">Portfolio</span></a>
+                <a><span class="icon-users"></span><span class="navigationText">About</span></a>
+                <a><span class="icon-terminal"></span><span class="navigationText">Code</span></a>
                 <a><span class="icon-shield"></span><span class="navigationText"></span></a>
-                <a><span class="icon-users"></span><span class="navigationText"></span></a>
                 <a><span class="icon-wrench1"></span><span class="navigationText"></span></a>
             </ul>
+        </nav>
+        <nav>
+            <a class="servicesLink" href="services.html" target="_blank">Services</a>
+            <a class="portfolioLink" href="portfolio.html" target="_blank">Portfolio</a>
+            <a class="aboutLink" href="about.html" target="_blank">About</a>
         </nav>
         <div class="contactButton"><span class="icon-share2 icon"></span></div>
     </header>
@@ -62,20 +70,30 @@
 
         <h3>A Philosophy of Accessibility</h3>
         <p><span id="accessibility-tagline">When nobody is left behind, we all move foreward together!</span></p>
+        <hr class="contenthr">
         <h3>Fair Trade & Transparent Billing</h3>
         <p>We are owner operated and always communicate consistently with our clients.</p>
+        <hr class="contenthr">
         <h3>We're helping weave the Semantic Web</h3>
         <p>Ontology is not just a buzzword or something we learned reading Heidegger's <em>Being and Time</em></p>
+        <hr class="contenthr">
     </main>
 
-
+    <div class="siteMap">
+            <a  href="services.html" target="_blank">Services</a>
+            <a  href="portfolio.html" target="_blank">Portfolio</a>
+            <a  href="about.html" target="_blank">About</a>
+            <a  href="about.html" target="_blank">Call</a>
+            <a  href="about.html" target="_blank">Email</a>
+            <a  href="about.html" target="_blank">Code</a>
+    </div>
     <footer class="footer">
-           <a><span class="icon-twitter icon"></span></a>
-            <a><span class="icon-play icon"></span></a>
-            <a><span class="icon-github icon"></span></a>
-            <a><span class="icon-soundcloud icon"></span></a>
+        <a href="https://twitter.com/cafetechne" target="_blank"><span class="icon-twitter icon"></span></a>
+        <a href=""><span class="icon-play icon" target="_blank"></span></a>
+        <a href="https://github.com/cafetechne" target="_blank"><span class="icon-github icon"></span></a>
+        <a href="https://soundcloud.com/cafetechne" target="_blank"><span class="icon-soundcloud icon"></span></a>
 
-            <!--
+        <!--
                 <span class="icon-instagram icon"></span>
             <span class="icon-steam icon"></span>
             <span class="icon-comment icon"></span>
@@ -84,12 +102,13 @@
             <span class="icon-bubbles icon"></span>
             <span class="icon-share2 icon"></span>
             -->
-   
-        
+
+
     </footer>
 
 </body>
 <!--Phone Icon: By Ellipol [CC BY-SA 4.0  (https://creativecommons.org/licenses/by-sa/4.0)], from Wikimedia Commons-->
 <!--Mail Icon: 	Hüseyin Çakır , iconfinder CC 3.0 Attribution, https://www.iconfinder.com/icons/3066965/circle_e-mail_high_quality_mail_media_social_social_media_icon  -->
 <!--Social Media Icons: Anton Drukarov, https://www.iconfinder.com/Indygo -->
+
 </html>
