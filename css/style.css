@@ -16,7 +16,7 @@ footer {
     /*background-color: #284e57;*/
     background-color: #2567ba;
     color: #e5ecf5;
-    border-bottom: black 2px solid;
+    border-bottom: black 1px solid;
 }
 
 .footer {
@@ -30,6 +30,8 @@ footer {
     width: 100%;
     color: #e5ecf5;
     text-align: center;
+    padding-top: 5px;
+    padding-bottom: 3px;
 }
 
 main {
@@ -59,8 +61,8 @@ h2 {
 }
 
 h3 {
-    font-size: 1.9rem;
-    margin-top: 2rem;
+    font-size: 2.4rem;
+    margin-top: 1.25rem;
 }
 
 nav,
@@ -160,6 +162,14 @@ p {
     transition: margin-left .5s;
 
 }
+.mainContent .content{
+    width: 50%;
+    text-align: justify;
+    margin: 0 auto;
+    text-indent: 2rem;
+    max-width: 75ch;
+}
+
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
@@ -186,15 +196,24 @@ p {
     height: 5px;
     background-color: #ffffff;
     margin: 6px 0;
-    -webkit-transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
 }
 .bar1:hover,
 .bar2:hover,
 .bar3:hover{
 color: #ba7825;
+}
+.hamburger{
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.hamburger:hover{
+    color: #ba7825;
 }
 
 /* Rotate first bar */
@@ -222,7 +241,8 @@ a {
     display: absolute;
     left: 50%;
     margin-top: -.75em;
-    position: absolute top;
+    padding-bottom: 0;
+    margin-bottom: -.75rem;
 }
 
 .contactButton {
@@ -239,6 +259,19 @@ a {
     border: black 1px solid;
 }
 
+.siteMap {
+    color:  #e5ecf5;
+    position: sticky;
+    text-align: justify;
+    text-justify: inter-word;
+    background-color: #2567ba;
+    padding-bottom: 20px;
+    margin-top: 5px;
+    column-count: 3;
+    padding-bottom: 30px;
+    
+}
+
 
 @media only screen and (max-width: 768px) {
     body {
@@ -249,6 +282,7 @@ a {
     .content {
         width: 92%;
         margin: auto;
+        max-width: 75ch;
     }
 
     h1 {
@@ -291,6 +325,13 @@ a {
         padding-top: .1355rem;
         width: auto;
     }
+    #brandName {
+        display: absolute;
+        left: 50%;
+        margin-top: -.75em;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
 }
 
 @media only screen and (max-width: 420px) {
@@ -311,9 +352,10 @@ a {
         text-align: justify;
         text-justify: inter-word;
         background-color: #2567ba;
-        padding-bottom: 20px;
         margin-top: 5px;
         column-count: 3;
+        padding-bottom: 45px;
+        padding-top: 10px;
     }
 
     .siteMap a {
@@ -324,6 +366,12 @@ a {
         width: 90%;
         text-align: justify;
         text-justify: left;
+    }
+    .mainContent .content{
+        width: 95%;
+        text-align: justify;
+        margin: 0 auto;
+        text-indent: 2rem;
     }
 }
 
@@ -435,3 +483,4 @@ a {
     columns: 1;
     column-gap: 40px;
 }
+
