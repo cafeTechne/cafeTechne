@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Bellefair|Lato');
+
 /* latin */
 @font-face {
     font-family: 'Montserrat';
@@ -6,8 +7,8 @@
     font-weight: 400;
     src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-  
+}
+
 
 body {
     margin: 0;
@@ -18,6 +19,10 @@ body {
     border: black 1px solid;
 }
 
+/***********************************************************************
+* Header, Navbar, Sidenar & Footer
+*
+************************************************************************/
 header,
 footer {
     margin: 0;
@@ -26,6 +31,39 @@ footer {
     background-color: #2567ba;
     color: #e5ecf5;
     border-bottom: black 1px solid;
+    border-top: black 10px solid;
+    width: 100%;
+    transition: all 500ms ease 0s;
+    position: fixed;
+}
+header #navLinks{
+    z-index: 1;
+    position: absolute;
+}
+
+.scrolledHeader {
+    height: 75px;
+    margin-top: -4px;
+}
+#brandName, h1{
+    padding: 0;
+    margin-bottom: 5px;
+}
+.scrolledHeader #brandName {
+    font-size: 4em;
+    display: inline-block;
+    padding-bottom: 0;
+    margin-left: 24%;
+    padding-bottom: 15px;
+    transition: all 500ms ease 0s;
+}
+
+.scrolledHeader h2{
+    height: 15px;
+    border: 5px black solid;
+    background: black;
+    font-size: 10px;
+    
 }
 
 .footer {
@@ -43,43 +81,6 @@ footer {
     padding-bottom: 3px;
 }
 
-main {
-    margin: 0;
-    padding: 0;
-    background-color: #e8ebf4;
-
-}
-
-h1,
-h2,
-h3 {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    margin-top: -5px;
-}
-
-h1 {
-    font-size: 6rem;
-}
-
-h2 {
-    font-size: 1.7815rem;
-    padding-bottom: 1px;
-    line-height: 1.75;
-}
-
-h3 {
-    font-size: 2.4rem;
-    margin-top: 1.25rem;
-}
-
-nav,
-footer {
-    border: black 1px solid;
-    border-top: black 1px solid;
-}
-
 nav ul {
     padding: 5px;
 }
@@ -91,23 +92,6 @@ nav button {
     margin: auto;
 }
 
-p {
-    font-family: 'Bellefair', serif;
-    text-align: center;
-    text-justify: left;
-    columns: 1;
-    width: 75ch;
-    padding: 0;
-    font-size: 1.525rem;
-    padding-bottom: .5rem;
-    padding-top: .1355rem;
-    width: auto;
-}
-
-#wrapper {
-    width: 60%;
-    margin: auto;
-}
 
 /* The side navigation menu */
 .sidenav {
@@ -129,10 +113,10 @@ p {
     padding-top: 60px;
     /* Place content 60px from the top */
     /* 0.2 second transition effect to slide in the sidenav */
-    -webkit-transition: 0.2s ease-out;
-    -moz-transition: 0.2s ease-out;
-    -o-transition: 0.2s ease-out;
-    transition: 0.2s ease-out;
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
     border-top: black 1px solid;
 }
 
@@ -143,10 +127,10 @@ p {
     font-size: 25px;
     color: #e5ecf5;
     display: block;
-    -webkit-transition: 0.2s ease-out;
-    -moz-transition: 0.2s ease-out;
-    -o-transition: 0.2s ease-out;
-    transition: 0.2s ease-out;
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
     margin: 0;
     font-size: 2.5rem;
 }
@@ -166,27 +150,14 @@ p {
     margin-left: 50px;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-    transition: margin-left .5s;
 
-}
-.mainContent .content{
-    width: 50%;
-    text-align: justify;
-    margin: 0 auto;
-    text-indent: 2rem;
-    max-width: 75ch;
+nav,
+footer {
+    border: black 1px solid;
+    border-top: black 1px solid;
 }
 
 
-
-.container {
-    display: inline-block;
-    cursor: pointer;
-    padding: 1em;
-    color: #ba7825
-}
 
 .bar1,
 .bar2,
@@ -195,23 +166,26 @@ p {
     height: 5px;
     background-color: #ffffff;
     margin: 6px 0;
-    -webkit-transition: 0.2s ease-out;
-    -moz-transition: 0.2s ease-out;
-    -o-transition: 0.2s ease-out;
-    transition: 0.2s ease-out;
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
 }
+
 .bar1:hover,
 .bar2:hover,
-.bar3:hover{
-color: #ba7825;
+.bar3:hover {
+    color: #ba7825;
 }
-.hamburger{
-    -webkit-transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    -o-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
+
+.hamburger {
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
 }
-.hamburger:hover{
+
+.hamburger:hover {
     color: #ba7825;
 }
 
@@ -242,6 +216,7 @@ a {
     margin-top: -.75em;
     padding-bottom: 0;
     margin-bottom: -.75rem;
+    transition: all 500ms ease 0s;
 }
 
 .contactButton {
@@ -258,8 +233,92 @@ a {
     border: black 1px solid;
 }
 
+
+/***********************************************************************
+*
+*
+************************************************************************/
+
+
+main {
+    margin: 0;
+    padding: 0;
+    background-color: #e8ebf4;
+
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: -5px;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 1.7815rem;
+    padding-bottom: 1px;
+    line-height: 1.75;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+h3 {
+    font-size: 2.4rem;
+    margin-top: 1.25rem;
+}
+
+p {
+    font-family: 'Bellefair', serif;
+    text-align: center;
+    text-justify: left;
+    columns: 1;
+    width: 75ch;
+    padding: 0;
+    font-size: 1.525rem;
+    padding-bottom: .5rem;
+    padding-top: .1355rem;
+    width: auto;
+}
+
+#wrapper {
+    width: 60%;
+    margin: auto;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+
+}
+
+.mainContent .content {
+    width: 50%;
+    text-align: justify;
+    margin: 0 auto;
+    text-indent: 2rem;
+    max-width: 75ch;
+}
+
+
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    padding: 1em;
+    color: #ba7825
+}
+
 .siteMap {
-    color:  #e5ecf5;
+    color: #e5ecf5;
     position: sticky;
     text-align: justify;
     text-justify: inter-word;
@@ -268,18 +327,63 @@ a {
     margin-top: 5px;
     column-count: 3;
     padding-bottom: 30px;
-    
+
 }
+
 a {
     text-decoration: none;
     color: #e5ecf5;
 }
-.mainContent{
+
+.mainContent {
     columns: 1;
     column-gap: 40px;
 }
-#accessibility-tagline{
-    
+
+#tagline {
+    font-family: 'Lato';
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 3px;
+}
+
+.servicesLink,
+.aboutLink,
+.portfolioLink {
+    padding: 10px;
+    display: inline-block;
+    position: fixed;
+    margin-right: 8px;
+    top: 0;
+    right: 0;
+    color: #e5ecf5;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-size: 1.25rem;
+    margin-top: 15px;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+    z-index: 10;
+
+}
+
+.servicesLink {
+    z-index: 5;
+    position: absolute;
+    margin-right: 8px;
+}
+
+.aboutLink {
+    margin-right: 120px;
+}
+
+.portfolioLink {
+    margin-right: 208px;
 }
 
 
@@ -362,6 +466,7 @@ a {
         padding-top: .1355rem;
         width: auto;
     }
+
     #brandName {
         display: absolute;
         left: 50%;
@@ -370,6 +475,7 @@ a {
         margin-bottom: 0;
     }
 }
+
 /***********************************************************************
 *
 *
@@ -387,7 +493,7 @@ a {
     }
 
     .siteMap {
-        color:  #e5ecf5;
+        color: #e5ecf5;
         position: sticky;
         text-align: justify;
         text-justify: inter-word;
@@ -402,12 +508,14 @@ a {
         margin: 10px 20px 10px 20px;
         padding: 10px;
     }
-    p{
+
+    p {
         width: 90%;
         text-align: justify;
         text-justify: left;
     }
-    .mainContent .content{
+
+    .mainContent .content {
         width: 95%;
         text-align: justify;
         margin: 0 auto;
@@ -429,12 +537,13 @@ footer img {
     font-size: 1.5rem;
     margin-left: 1.25rem;
     color: #e5ecf5;
-    -webkit-transition: 0.2s ease-out;
-    -moz-transition: 0.2s ease-out;
-    -o-transition: 0.2s ease-out;
-    transition: 0.2s ease-out;
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
 }
-.icon:hover{
+
+.icon:hover {
     color: #ba7825;
 }
 
@@ -450,7 +559,12 @@ footer img {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    -webkit-transition: 0.2s ease;
+    -moz-transition: 0.2s ease;
+    -o-transition: 0.2s ease;
+    transition: 0.2s ease;
 }
+
 /***********************************************************************
 *
 *
@@ -470,10 +584,11 @@ footer img {
         text-decoration: none;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
         font-size: 1.25rem;
-        -webkit-transition: 0.3s ease-in-out;
-        -moz-transition: 0.3s ease-in-out;
-        -o-transition: 0.3s ease-in-out;
-        transition: 0.3s ease-in-out;
+        margin-top: 15px;
+        -webkit-transition: 0.3s ease;
+        -moz-transition: 0.3s ease;
+        -o-transition: 0.3s ease;
+        transition: 0.3s ease;
 
     }
 
@@ -496,6 +611,7 @@ footer img {
     }
 
 }
+
 /***********************************************************************
 *
 *
@@ -521,4 +637,3 @@ footer img {
 
 
 }
-

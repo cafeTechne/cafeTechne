@@ -32,13 +32,30 @@
     <link rel="stylesheet" media="all and (orientation:portrait)" href="portrait.css">
     <link rel="stylesheet" media="all and (orientation:landscape)" href="landscape.css">
     <!-- -->
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/javaScript.js"></script>
+
+<style>
+.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+</style>
+
+<script>
+$(window).scroll(function(e){
+    $el = $('.header');
+    $el.toggleClass('scrolledHeader', $(this).scrollTop() > 0); 
+}); 
+
+
+    </script>
 
 </head>
 
 <body>
 
-    <header>
+    <header class="header">
         <div class="container hamburger" onclick="openNav();myFunction(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
@@ -47,8 +64,13 @@
         <a href="index.html">
             <h1 id="brandName">Caf&#233; Techn&#233;</h1>
         </a>
-        <hr class="contentDivider">
+        
         <h2 id="whatWeDo">Web Design & Development</h2>
+        <nav id="navLinks">
+            <a class="servicesLink" href="services.html" target="_blank">Services</a>
+            <a class="portfolioLink" href="portfolio.html" target="_blank">Portfolio</a>
+            <a class="aboutLink" href="about.html" target="_blank">About</a>
+        </nav>
         <nav id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <ul>
@@ -62,19 +84,14 @@
 
             </ul>
         </nav>
-        <nav>
-            <a class="servicesLink" href="services.html" target="_blank">Services</a>
-            <a class="portfolioLink" href="portfolio.html" target="_blank">Portfolio</a>
-            <a class="aboutLink" href="about.html" target="_blank">About</a>
-        </nav>
-        <div class="contactButton"><span class="icon-share2 icon"></span></div>
+        <!-- FAB : <div class="contactButton"><span class="icon-share2 icon"></span></div> -->
     </header>
 
 
     <main class="content">
         <div class="mainContent">
             <h3>A Philosophy of Accessibility</h3>
-            <p><span id="accessibility-tagline">When nobody is left behind, we all move foreward together!</span></p>
+            <div id="tagline"><span>When nobody is left behind, we all move foreward together!</span></div>
             <hr class="contenthr">
             <p class="content">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in eros ac lorem elementum fringilla. Duis
@@ -99,7 +116,7 @@
 
 
             <h3>Fair Trade & Transparent Billing</h3>
-            <p>We are owner operated and always communicate consistently with our clients.</p>
+            <div id="tagline">We are owner operated and always communicate consistently with our clients.</div>
 
             <hr class="contenthr">
             <p class="content">
@@ -123,7 +140,7 @@
 
             <hr class="contenthr">
             <h3>We're helping weave the Semantic Web</h3>
-            <p>Ontology is not just a buzzword or something we learned reading Heidegger's <em>Being and Time</em></p>
+            <div id="tagline">Ontology is not just a buzzword or something we learned reading Heidegger's <em>Being and Time</em></div>
             <hr class="contenthr">
 
 
@@ -172,7 +189,6 @@
 
 
     </footer>
-
 </body>
 <!--Phone Icon: By Ellipol [CC BY-SA 4.0  (https://creativecommons.org/licenses/by-sa/4.0)], from Wikimedia Commons-->
 <!--Mail Icon: 	Hüseyin Çakır , iconfinder CC 3.0 Attribution, https://www.iconfinder.com/icons/3066965/circle_e-mail_high_quality_mail_media_social_social_media_icon  -->
