@@ -35,20 +35,18 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/javaScript.js"></script>
 
-<style>
-.navbar-fixed-top.scrolled {
-  background-color: #fff !important;
-  transition: background-color 200ms linear;
-}
-</style>
+    <style>
+        .navbar-fixed-top.scrolled {
+            background-color: #fff !important;
+            transition: background-color 200ms linear;
+        }
+    </style>
 
-<script>
-$(window).scroll(function(e){
-    $el = $('.header');
-    $el.toggleClass('scrolledHeader', $(this).scrollTop() > 0); 
-}); 
-
-
+    <script>
+        $(window).scroll(function (e) {
+            $el = $('.header');
+            $el.toggleClass('scrolledHeader', $(this).scrollTop() > 0);
+        });
     </script>
 
 </head>
@@ -64,8 +62,8 @@ $(window).scroll(function(e){
         <a href="index.html">
             <h1 id="brandName">Caf&#233; Techn&#233;</h1>
         </a>
-        
-        <h2 id="whatWeDo">Web Design & Development</h2>
+
+
         <nav id="navLinks">
             <a class="servicesLink" href="services.html" target="_blank">Services</a>
             <a class="portfolioLink" href="portfolio.html" target="_blank">Portfolio</a>
@@ -140,7 +138,8 @@ $(window).scroll(function(e){
 
             <hr class="contenthr">
             <h3>We're helping weave the Semantic Web</h3>
-            <div id="tagline">Ontology is not just a buzzword or something we learned reading Heidegger's <em>Being and Time</em></div>
+            <div id="tagline">Ontology is not just a buzzword or something we learned reading Heidegger's <em>Being and
+                    Time</em></div>
             <hr class="contenthr">
 
 
