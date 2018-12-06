@@ -1,14 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Bellefair|Lato');
-
 /* latin */
 @font-face {
-    font-family: 'Montserrat';
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Crimson Text Bold Italic'), local('CrimsonText-BoldItalic'), url(https://fonts.gstatic.com/s/crimsontext/v8/wlprgwHKFkZgtmSR3NB0oRJfajDqDuNS_LU.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Crimson Text';
     font-style: normal;
     font-weight: 400;
-    src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v12/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+    src: local('Crimson Text Regular'), local('CrimsonText-Regular'), url(https://fonts.gstatic.com/s/crimsontext/v8/wlp2gwHKFkZgtmSR3NB0oRJfbwhT.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
+  }
+  
 body {
     margin: 0;
     padding: 0;
@@ -250,11 +257,12 @@ main {
 h1,
 h2,
 h3 {
+    width: 90%;
     text-align: center;
     margin: 0;
     padding: 0;
-    margin-top: -5px;
-
+    margin: -5px auto;
+    
 }
 
 h1 {
@@ -278,7 +286,7 @@ h3 {
 }
 
 p {
-    font-family: 'Bellefair', serif;
+    font-family: 'Crimson Text', serif;
     text-align: center;
     text-justify: left;
     columns: 1;
@@ -310,8 +318,6 @@ p {
     text-indent: 2rem;
     max-width: 75ch;
 }
-
-
 
 .container {
     display: inline-block;
@@ -355,6 +361,7 @@ a {
 .mainContent {
     columns: 1;
     column-gap: 40px;
+    margin-top: 55px;
 }
 
 #tagline {
@@ -434,11 +441,134 @@ footer img {
 }
 
 /***********************************************************************
+*Sets the links in the top right to disappear on screens bigger than 1130px
+*
+************************************************************************/
+@media only screen and (max-width: 1130px) {
+    .portfolioLink {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .aboutLink {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .servicesLink {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+}
+
+
+
+/********************************************************
+*
+* Better Break points?
+*
+********************************************************/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 490px) {
+  
+    header #brandName {
+        font-size: 2rem;
+        margin-top: 5px;
+    }
+
+    .siteMap {
+        margin-bottom: 25px;
+    }
+
+    h2 {
+        font-size: 1.2725rem;
+        margin-bottom: 7px;
+    }
+
+    .siteMap {
+        color: #e5ecf5;
+        text-align: justify;
+        text-justify: inter-word;
+        background-color: #2567ba;
+        margin-top: 5px;
+        column-count: 3;
+        padding-bottom: 30px;
+        padding-top: 10px;
+    }
+
+    .siteMap a {
+        display: block;
+    }
+
+    p {
+        width: 90%;
+        text-align: justify;
+        text-justify: left;
+    }
+
+    .mainContent .content {
+        width: 90%;
+        text-align: justify;
+        margin: 0 auto;
+        text-indent: 2rem;
+        font-size: 17px;
+        padding: 0px;
+    }
+
+    .mainContent {
+        margin-top: 34px;
+    }
+    footer{
+        margin: 0;
+        padding: 0;
+    }
+    .footer{
+        padding: 0;
+        margin: 0;
+    }
+    .footer a{
+        margin: 1px;
+        padding: 2px;
+    }
+    .footer img {
+        width: 28px;
+        height: 28px;
+        margin: 2px;
+    }
+    .hamburger {
+        position: absolute;
+        top: -13px;
+        left: -6px;
+        -webkit-transition: 0.3s ease;
+        -moz-transition: 0.3s ease;
+        -o-transition: 0.3s ease;
+        transition: 0.3s ease;
+    }
+
+
+}
+
+
+/***********************************************************************
+* Adjusts brandName id for a narrow band between 420 and 490px width where
+* it looked terrible!
+************************************************************************/
+@media only screen and (max-width: 490px) {
+
+}
+
+
+/***********************************************************************
 *
 *
 ************************************************************************/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 491px) {
     body {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
         /*Loads system fonts on smaller devices, assuming lower bandwidth */
@@ -480,7 +610,7 @@ footer img {
     }
 
     p {
-        font-family: 'Bellefair', serif;
+        font-family: 'Crimson Text', serif;
         text-justify: inter-word;
         width: 75ch;
         margin: 0 0 0 1em;
@@ -506,7 +636,6 @@ footer img {
 
     header #brandName {
         display: absolute;
-
         font-size: 4.1rem;
     }
 
@@ -516,33 +645,28 @@ footer img {
     }
 }
 
-
-/***********************************************************************
-* Adjusts brandName id for a narrow band between 420 and 490px width where
-* it looked terrible!
-************************************************************************/
-@media only screen and (max-width: 490px) {
-    header #brandName {
-        font-size: 3rem;
-        margin-top: 5px;
-    }
-
-    .siteMap {
-        margin-bottom: 25px;
-    }
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    /* Styles */
 }
 
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    /* Styles */
+}
 
-/***********************************************************************
-*
-*
-************************************************************************/
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* Styles */
+}
+
+/* Desktops and laptops ----------- */
 @media only screen and (min-width: 1130px) {
 
     .servicesLink,
     .aboutLink,
     .portfolioLink {
-        padding: 10px;
+        
 
         position: absolute;
         margin-right: 8px;
@@ -552,7 +676,7 @@ footer img {
         text-decoration: none;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
         font-size: 1.25rem;
-        margin-top: 20px;
+        margin-top: 12px;
         -webkit-transition: 0.3s ease;
         -moz-transition: 0.3s ease;
         -o-transition: 0.3s ease;
@@ -587,136 +711,10 @@ footer img {
     }
 
     .mainContent {
-        margin-top: 90px;
+        margin-top: 55px;
     }
 }
 
-
-/***********************************************************************
-*
-*
-************************************************************************/
-@media only screen and (max-width: 1130px) {
-    .portfolioLink {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-    }
-
-    .aboutLink {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-    }
-
-    .servicesLink {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-    }
-
-}
-
-/***********************************************************************
-*
-*
-************************************************************************/
-@media only screen and (max-width: 420px) {
-    h1 {
-        font-size: 1rem;
-        line-height: 70px;
-        padding-left: 20px;
-    }
-
-    header #brandName {
-        font-size: 5rem;
-        margin-top: -15px;
-        padding: 5px;
-
-    }
-
-    h2 {
-        font-size: 1.2725rem;
-        margin-bottom: 7px;
-    }
-
-    .siteMap {
-        color: #e5ecf5;
-
-        text-align: justify;
-        text-justify: inter-word;
-        background-color: #2567ba;
-        margin-top: 5px;
-        column-count: 3;
-        padding-bottom: 45px;
-        padding-top: 10px;
-    }
-
-    .siteMap a {
-        display: block;
-
-    }
-
-    p {
-        width: 90%;
-        text-align: justify;
-        text-justify: left;
-    }
-
-    .mainContent .content {
-        width: 95%;
-        text-align: justify;
-        margin: 0 auto;
-        text-indent: 2rem;
-    }
-
-    .mainContent {
-        margin-top: 200px;
-    }
-}
-
-
-
-/********************************************************
-*
-* Better Break points?
-*
-********************************************************/
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    /* Styles */
-}
-
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width : 321px) {
-    /* Styles */
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
-    /* Styles */
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    /* Styles */
-}
-
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-    /* Styles */
-}
-
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-    /* Styles */
-}
-
-/* Desktops and laptops ----------- */
-@media only screen and (min-width : 1224px) {
-    /* Styles */
-}
 
 /* Large screens ----------- */
 @media only screen and (min-width : 1824px) {
