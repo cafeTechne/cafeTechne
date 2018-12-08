@@ -1,21 +1,21 @@
-@import url('https://fonts.googleapis.com/css?family=Bellefair|Lato');
 /* latin */
 @font-face {
-    font-family: 'Crimson Text';
-    font-style: italic;
-    font-weight: 700;
-    src: local('Crimson Text Bold Italic'), local('CrimsonText-BoldItalic'), url(https://fonts.gstatic.com/s/crimsontext/v8/wlprgwHKFkZgtmSR3NB0oRJfajDqDuNS_LU.woff2) format('woff2');
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-  /* latin */
-  @font-face {
+}
+
+/* latin */
+@font-face {
     font-family: 'Crimson Text';
     font-style: normal;
     font-weight: 400;
     src: local('Crimson Text Regular'), local('CrimsonText-Regular'), url(https://fonts.gstatic.com/s/crimsontext/v8/wlp2gwHKFkZgtmSR3NB0oRJfbwhT.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-  
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -42,12 +42,12 @@ footer {
     /*background-color: #284e57;*/
     background-color: #2567ba;
     color: #e5ecf5;
-    
+
     width: 100%;
     z-index: 2;
     position: fixed;
-    
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 header {
@@ -129,11 +129,10 @@ nav button {
     padding-top: 60px;
     /* Place content 60px from the top */
     /* 0.2 second transition effect to slide in the sidenav */
-    -webkit-transition: 0.2s ease;
-    -moz-transition: 0.2s ease;
-    -o-transition: 0.2s ease;
-    transition: 0.2s ease;
+
+    transition: 0.4s ease;
     border-top: black 1px solid;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 /* The navigation menu links */
@@ -255,9 +254,11 @@ main {
     background-color: #e8ebf4;
 
 }
-.heroImage{
+
+.heroImage {
     margin: 0px;
 }
+
 h1,
 h2,
 h3 {
@@ -266,7 +267,7 @@ h3 {
     margin: 0;
     padding: 0;
     margin: -5px auto;
-    
+
 }
 
 h1 {
@@ -358,7 +359,8 @@ a {
     margin: 5px;
     padding: 5px;
 }
-nav a{
+
+nav a {
     text-align: left;
 }
 
@@ -395,7 +397,7 @@ footer img {
     color: #e5ecf5;
     transition: 0.2s ease;
     margin: 5px 5px;
-    
+
 }
 
 .icon:hover {
@@ -439,8 +441,8 @@ footer img {
     .siteMap {
         margin-bottom: 22px;
     }
-    
-    .siteMap a{
+
+    .siteMap a {
         padding-bottom: 0px;
     }
 
@@ -482,7 +484,7 @@ footer img {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 490px) {
-  
+
     header #brandName {
         font-size: 2rem;
         margin-top: 5px;
@@ -530,15 +532,16 @@ footer img {
     }
 
     .mainContent {
-        margin-top: 16px;
+        margin-top: 0px;
     }
-    
+
 
     .footer img {
         width: 28px;
         height: 28px;
         margin: 2px;
     }
+
     .hamburger {
         position: absolute;
         top: -11px;
@@ -549,24 +552,25 @@ footer img {
         transition: 0.3s ease;
     }
 
-    .heroImage{
+    .heroImage {
         max-width: 100%;
         position: static;
         display: block;
         margin: 10% auto;
         margin-top: 48px;
-        margin-bottom: 0px;    
+        margin-bottom: 0px;
     }
-    
 
-}
-
-
-/***********************************************************************
-* Adjusts brandName id for a narrow band between 420 and 490px width where
-* it looked terrible!
-************************************************************************/
-@media only screen and (max-width: 490px) {
+    .heroText {
+        font-family: 'Roboto';
+        color: white;
+        position: relative;
+        bottom: 1.3rem;
+        text-align: center;
+        font-size: .8rem;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
 
 }
 
@@ -576,12 +580,12 @@ footer img {
 *
 ************************************************************************/
 
-@media only screen and (min-width: 491px) and (max-width: 1129px){
+@media only screen and (min-width: 491px) and (max-width: 1129px) {
     body {
         /*font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;*/
         font-family: Lato, Verdana, Geneva, Tahoma, sans-serif;
         /*Loads system fonts on smaller devices, assuming lower bandwidth */
-        
+
     }
 
     .content {
@@ -601,7 +605,8 @@ footer img {
         margin-bottom: 7px;
         margin-top: 0;
     }
-/*
+
+    /*
     button {
         display: block;
         width: 100%;
@@ -644,7 +649,10 @@ footer img {
         margin: 0 auto;
         text-indent: 2rem;
         font-size: 20px;
-        
+    }
+
+    .mainContent {
+        margin-top: -20px;
     }
 
     header #brandName {
@@ -658,17 +666,28 @@ footer img {
     }
 
 
-.heroImage{
-    max-width: 100%;
-    position: static;
-    display: block;
-    margin: 10% auto;
-    margin-top: 61px;
-    margin-bottom: 0px;    
+    .heroImage {
+        max-width: 100%;
+        position: static;
+        display: block;
+        margin: 10% auto;
+        margin-top: 48px;
+        margin-bottom: 0px;
+    }
+
+    .heroText {
+        font-family: 'Roboto';
+        color: white;
+        position: relative;
+        bottom: 2.4rem;
+        text-align: center;
+        font-size: 1.4rem;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
 }
 
 
-}
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -691,8 +710,6 @@ footer img {
     .servicesLink,
     .aboutLink,
     .portfolioLink {
-        
-
         position: absolute;
         margin-right: 8px;
         top: 0;
@@ -701,7 +718,7 @@ footer img {
         text-decoration: none;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
         font-size: 1.15rem;
-        margin-top: 24px;
+        margin-top: 30px;
         -webkit-transition: 0.3s ease;
         -moz-transition: 0.3s ease;
         -o-transition: 0.3s ease;
@@ -733,17 +750,27 @@ footer img {
 
 
     .mainContent {
-        margin-top: 20px;
+        margin-top: -20px;
     }
 
-.heroImage{
-    max-width: 100%;
-    position: static;
-    display: block;
-    margin: 10% auto;
-    margin-top: 87px;
-    margin-bottom: 0px;    
-}
+    .heroImage {
+        max-width: 100%;
+        position: static;
+        display: block;
+        margin: 10% auto;
+        margin-top: 87px;
+        margin-bottom: 0px;
+    }
+    .heroText{
+        font-family: 'Roboto';
+        color: white;
+        position: relative;
+        bottom: 2.9rem;
+        text-align: center;
+        font-size: 1.8rem;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
 
 }
 
@@ -757,4 +784,9 @@ footer img {
 @media only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
     /* Styles */
+}
+
+.heroContainer {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
