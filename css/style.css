@@ -530,7 +530,7 @@ footer img {
     }
 
     .mainContent {
-        margin-top: 34px;
+        margin-top: 16px;
     }
     
 
@@ -549,12 +549,12 @@ footer img {
         transition: 0.3s ease;
     }
 
-    .heroImage{    
+    .heroImage{
         max-width: 100%;
         position: static;
         display: block;
-        margin: 0% auto;
-        margin-top: -50px;
+        margin: 10% auto;
+        margin-top: 48px;
         margin-bottom: 0px;    
     }
     
@@ -576,7 +576,7 @@ footer img {
 *
 ************************************************************************/
 
-@media only screen and (min-width: 491px) {
+@media only screen and (min-width: 491px) and (max-width: 1129px){
     body {
         /*font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;*/
         font-family: Lato, Verdana, Geneva, Tahoma, sans-serif;
@@ -644,6 +644,7 @@ footer img {
         margin: 0 auto;
         text-indent: 2rem;
         font-size: 20px;
+        
     }
 
     header #brandName {
@@ -655,6 +656,18 @@ footer img {
         top: -4px;
         left: 5px;
     }
+
+
+.heroImage{
+    max-width: 100%;
+    position: static;
+    display: block;
+    margin: 10% auto;
+    margin-top: 61px;
+    margin-bottom: 0px;    
+}
+
+
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -687,8 +700,8 @@ footer img {
         color: #e5ecf5;
         text-decoration: none;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-        font-size: 1.25rem;
-        margin-top: 12px;
+        font-size: 1.15rem;
+        margin-top: 24px;
         -webkit-transition: 0.3s ease;
         -moz-transition: 0.3s ease;
         -o-transition: 0.3s ease;
@@ -697,15 +710,15 @@ footer img {
     }
 
     .servicesLink {
-        margin-right: 8px;
+        margin-right: 15px;
     }
 
     .aboutLink {
-        margin-right: 120px;
+        margin-right: 125px;
     }
 
     .portfolioLink {
-        margin-right: 208px;
+        margin-right: 213px;
     }
 
     .servicesLink:hover,
@@ -720,8 +733,18 @@ footer img {
 
 
     .mainContent {
-        margin-top: 55px;
+        margin-top: 20px;
     }
+
+.heroImage{
+    max-width: 100%;
+    position: static;
+    display: block;
+    margin: 10% auto;
+    margin-top: 87px;
+    margin-bottom: 0px;    
+}
+
 }
 
 
@@ -734,14 +757,4 @@ footer img {
 @media only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
     /* Styles */
-}
-
-.heroImage{
-    
-    max-width: 100%;
-    position: static;
-    display: block;
-    margin: 10% auto;
-    margin-top: 48px;
-    margin-bottom: 0px;    
 }
