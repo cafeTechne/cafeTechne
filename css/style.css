@@ -825,18 +825,67 @@ only screen and (min-device-pixel-ratio : 1.5) {
 
 .portfolioCard a img{
     display: block;
-    
+    margin: 0 auto;
     padding: 0 5px;
     width: 100%;
     max-width: 300px;
 }
 
 ul{
-    margin: 0 auto;
+    margin: 0 0;
+    padding: 0 0;
 }
 ul li{
     list-style-type: none;
     margin: 0 auto;
     margin-bottom: 50px;
     max-width: 500px;
+}
+ul li p{
+    
+    text-justify: left;
+}
+
+#servicesTable{
+    width:100%;
+    border: 1px black solid;
+    margin-bottom: 300px;
+}
+
+#aboutPicture{
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.mainContent img{
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#bioList ul li{
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+ol li{
+    margin: 0;
+    padding: 0;
+    background-position: 0 50%;
+    font-size: 1.5rem;
+    
+}
+ol{   
+    text-align: center;
+    list-style-position: inside;
+    margin-bottom: 200px;
+}
+h4{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0;
+    margin-top: 30px;
 }
