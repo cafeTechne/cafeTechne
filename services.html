@@ -1,0 +1,148 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Web Design & Development: bespoke client-facing solutions">
+    <meta name="keywords" content="Web Developer,Programmer,HTML,CSS,JavaScript,Java,C++">
+    <meta name="author" content="cafeTechne">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--hreflang tells Search Engines what the language of the target audience is-->
+    <link rel="alternate" href="http://cafetechne.com" hreflang="en-us" />
+
+    <!--Canonical Tag tells Search Engines this site is the original source of this content-->
+    <link rel="canonical" href="https://www.cafetechne.com" />
+
+    <!--The title tag is the most important tag for SEO, this is what shows up on google-->
+    <title>Caf&#233;Techn&#233; | Web Design & Development Services</title>
+
+    <!--Open Graph (og) meta tags are for ensuring content displays nicely when shared via social media-->
+    <meta property="og:title" content="Caf&#233;Techn&#233;: Web Design & Development Solutions" />
+    <meta property="og:image" content="https://example.com/img/facebooklogo.png" />
+    <meta property="og:site_name" content="Caf&#233; Techn&#233;: Web Design & Development" />
+    <meta property="og:description" content="This article will talk about tags" />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--This is the CSS file for the font stack, courtesy of iconomoon.io-->
+    <link rel="stylesheet" type="text/css" href="fonts.css">
+
+    <!-- This is how you set up CSS for iPad Orientation, courtesy of css-tricks.com-->
+    <link rel="stylesheet" media="all and (orientation:portrait)" href="portrait.css">
+    <link rel="stylesheet" media="all and (orientation:landscape)" href="landscape.css">
+    <!-- -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/javaScript.js"></script>
+
+    <style>
+        .navbar-fixed-top.scrolled {
+            background-color: #fff !important;
+            transition: background-color 200ms linear;
+        }
+    </style>
+
+    <script>
+        /* this is to resize the header dynamically... 
+        //but being left in because this is a template.
+        $(window).scroll(function (e) {
+            $el = $('.header');
+            $el.toggleClass('scrolledHeader', $(this).scrollTop() > 0);
+        });
+        */
+    </script>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="container hamburger" onclick="openNav();myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <a href="index.html">
+            <h1 id="brandName">Caf&#233; Techn&#233;</h1>
+        </a>
+
+
+        <nav id="navLinks">
+            <a class="servicesLink" href="services.html" target="_blank">Services</a>
+            <a class="portfolioLink" href="portfolio.html" target="_blank">Portfolio</a>
+            <a class="aboutLink" href="about.html" target="_blank">About</a>
+        </nav>
+        <nav id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <ul>
+                <a href="index.html" target="_blank" title="Go to Home section"><span class="icon-home3"></span><span
+                        class="navigationText">Home</span></a>
+                <a href="tel:3479214466" target="_blank" title="Call Me!"><span class="icon-phone"></span><span class="navigationText">Call</span></a>
+                <a href="mailto:cafetechne@gmail.com" target="_blank" title="Email link."><span class="icon-envelope-o"></span><span
+                        class="navigationText">Email</span></a>
+                <a href="services.html" target="_blank" title="Go to Services section"><span class="icon-magic-wand"></span><span
+                        class="navigationText">Services</span></a>
+                <a href="portfolio.html" target="_blank" title="Go to Portfolio section"><span class="icon-power"></span><span
+                        class="navigationText">Portfolio</span></a>
+                <a href="about.html" target="_blank" title="Go to About section"><span class="icon-users"></span><span
+                        class="navigationText">About</span></a>
+                <a href="https://github.com/cafetechne.com" target="_blank" title="Go to my github page"><span class="icon-terminal"></span><span
+                        class="navigationText">Code</span></a>
+            </ul>
+        </nav>
+        <!-- FAB : <div class="contactButton"><span class="icon-share2 icon"></span></div> -->
+    </header>
+
+    <div class="heroContainer">
+        <img class="heroImage" src="images/seaPhone.jpg" alt="A smartphone rests at a 45 degree angle on a rigging rope on a sailboat. The background is out of focus, but is clearly the sea as the sun is beginning to set.">
+        <h2 class="heroText">Web Development & Design Consultants</h2>
+    </div>
+    <main class="content">
+
+        <div class="mainContent">
+
+            <main class="content">
+
+                <div class="mainContent">
+                    <h2>Services</h2>
+                </div>
+            </main>
+
+        </div>
+    </main>
+
+    <div class="siteMap">
+        <a href="services.html" target="_blank" tabindex="1" title="Go to the Services section">Services</a>
+        <a href="portfolio.html" target="_blank" tabindex="2" title="Go to the Portfolio section">Portfolio</a>
+        <a href="about.html" target="_blank" tabindex="3" title="Go to About section">About</a>
+        <a href="tel:3479214466" target="_blank" tabindex="4" title="Call me!">Call</a>
+        <a href="mailto:cafetechne@gmail.com" target="_blank" tabindex="5" title="Email me!">Email</a>
+        <a href="https://github.com/cafetechne" target="_blank" tabindex="6" title="Go to my github page">Code</a>
+    </div>
+    <footer class="footer">
+        <a href="https://twitter.com/cafetechne" target="_blank" title="Go to my twitter page" tabindex="7"><span class="icon-twitter icon"></span></a>
+        <a href=""><span class="icon-play icon" target="_blank" title="Go to my youtube page" tabindex="8"></span></a>
+        <a href="https://github.com/cafetechne" target="_blank" title="Go to github page" tabindex="9"><span class="icon-github icon"></span></a>
+        <a href="https://soundcloud.com/cafetechne" target="_blank" title="Go to my soundcloud page" tabindex="10"><span
+                class="icon-soundcloud icon"></span></a>
+
+        <!--Left out, but the uploaded glyphs in this template support these icons.
+                <span class="icon-instagram icon"></span>
+            <span class="icon-steam icon"></span>
+            <span class="icon-comment icon"></span>
+            <span class="icon-paypal icon"></span>
+            <span class="icon-user-circle-o icon"></span>
+            <span class="icon-bubbles icon"></span>
+            <span class="icon-share2 icon"></span>
+            <a><span class="icon-shield"></span><span class="navigationText"></span></a>
+                <a><span class="icon-wrench1"></span><span class="navigationText"></span></a>
+        -->
+
+
+    </footer>
+</body>
+<!--Phone Icon: By Ellipol [CC BY-SA 4.0  (https://creativecommons.org/licenses/by-sa/4.0)], from Wikimedia Commons-->
+<!--Mail Icon: 	Hüseyin Çakır , iconfinder CC 3.0 Attribution, https://www.iconfinder.com/icons/3066965/circle_e-mail_high_quality_mail_media_social_social_media_icon  -->
+<!--Social Media Icons: Anton Drukarov, https://www.iconfinder.com/Indygo -->
+<!--SeaPhoto (heroImage) : CC0, pxhere: https://pxhere.com/en/photo/705346 -->
+
+</html>

@@ -1,4 +1,11 @@
-/* latin */
+  /* latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: local('Lato Black'), local('Lato-Black'), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh50XSwiPGQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
 @font-face {
     font-family: 'Lato';
     font-style: normal;
@@ -20,7 +27,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #e8ebf4;
-    font-family: Lato, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Lato', Verdana, Geneva, Tahoma, sans-serif;
     color: #2f2f2f;
     border: black 1px solid;
     font-optical-sizing: auto;
@@ -130,7 +137,7 @@ nav button {
     /* Place content 60px from the top */
     /* 0.2 second transition effect to slide in the sidenav */
 
-    transition: 0.4s ease;
+    transition: 1s ease;
     border-top: black 1px solid;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
@@ -141,10 +148,10 @@ nav button {
     text-decoration: none;
     color: #e5ecf5;
     display: block;
-    -webkit-transition: 0.2s ease;
-    -moz-transition: 0.2s ease;
-    -o-transition: 0.2s ease;
-    transition: 0.2s ease;
+    -webkit-transition: 1s ease;
+    -moz-transition: 1s ease;
+    -o-transition: 1s ease;
+    transition: 1s ease;
     margin: 0;
     font-size: 2rem;
 }
@@ -348,8 +355,6 @@ p {
     text-decoration: none;
     color: #e5ecf5;
     margin: auto;
-
-
 }
 
 a {
@@ -370,8 +375,8 @@ nav a {
     margin-top: 0px;
 }
 
-#tagline {
-    font-family: 'Lato';
+.tagline {
+    font-family: 'Lato', Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 0;
     padding-bottom: 0;
     margin: 0 auto;
@@ -562,16 +567,19 @@ footer img {
     }
 
     .heroText {
-        font-family: 'Roboto';
+        font-family: 'Lato Black', Verdana, Geneva, Tahoma, sans-serif;
         color: white;
         position: relative;
         bottom: 1.3rem;
         text-align: center;
-        font-size: .8rem;
+        font-size: .7rem;
         margin-bottom: 0px;
         padding-bottom: 0px;
     }
 
+    #lineBreakForMobile{
+        display: block;
+    }
 }
 
 
@@ -676,7 +684,7 @@ footer img {
     }
 
     .heroText {
-        font-family: 'Roboto';
+        font-family: 'Lato Black', Verdana, Geneva, Tahoma, sans-serif;
         color: white;
         position: relative;
         bottom: 2.4rem;
@@ -762,14 +770,15 @@ footer img {
         margin-bottom: 0px;
     }
     .heroText{
-        font-family: 'Roboto';
+        font-family: 'Lato Black', Verdana, Geneva, Tahoma, sans-serif;
         color: white;
         position: relative;
         bottom: 2.9rem;
         text-align: center;
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         margin-bottom: 0px;
         padding-bottom: 0px;
+        
     }
 
 }
@@ -789,4 +798,45 @@ only screen and (min-device-pixel-ratio : 1.5) {
 .heroContainer {
     margin-bottom: 0px;
     padding-bottom: 0px;
+}
+.anchorEndMark{
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: -21px;
+}
+.siteMap a:hover{
+    color: #ba7825;
+    transition: ease .5s;
+}
+.content a{
+    color:blue;
+    display: inline;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.portfolioPages{
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.portfolioCard a img{
+    display: block;
+    
+    padding: 0 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+ul{
+    margin: 0 auto;
+}
+ul li{
+    list-style-type: none;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    max-width: 500px;
 }
