@@ -24,13 +24,16 @@
     <meta property="og:site_name" content="Caf&#233; Techn&#233;: Web Design & Development" />
     <meta property="og:description" content="This article will talk about tags" />
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" media="all" type="text/css" href="css/style.css">
+    <link rel="stylesheet" media="only screen and (min-device-width : 320px) and (max-device-width : 490px)" type="text/css"
+        href="css/smartphoneScreens.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width: 491px) and (max-width: 1129px)" href="css/491to1129.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (min-width: 1130px)" href="css/regularScreens.css">
+
     <!--This is the CSS file for the font stack, courtesy of iconomoon.io-->
     <link rel="stylesheet" type="text/css" href="fonts.css">
 
-    <!-- This is how you set up CSS for iPad Orientation, courtesy of css-tricks.com-->
-    <link rel="stylesheet" media="all and (orientation:portrait)" href="portrait.css">
-    <link rel="stylesheet" media="all and (orientation:landscape)" href="landscape.css">
+
     <!-- -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/javaScript.js"></script>
@@ -92,51 +95,53 @@
         <!-- FAB : <div class="contactButton"><span class="icon-share2 icon"></span></div> -->
     </header>
 
-    <div class="heroContainer">
-        <img class="heroImage" src="images/servicesPicture.jpg" alt="A smartphone rests at a 45 degree angle on a rigging rope on a sailboat. The background is out of focus, but is clearly the sea as the sun is beginning to set.">
-        <h2 class="heroText">Web Development & Design Consultants</h2>
-    </div>
-    <main class="content">
 
+
+
+
+    <main class="content">
+        
         <div class="mainContent">
 
             <main class="content">
 
                 <div class="mainContent">
                     <table id="servicesTable">
-  <caption><h2>Services</h2></caption>
-  <tr>
-    <th>Service</th>
-    <th>Hourly Cost</th>
-  </tr>
-  <tr>
-    <td>Design</td>
-    <td>$25</td>
-  </tr>
-  <tr>
-    <td>Development</td>
-    <td>$40</td>
-  </tr>
-  <tr>
-    <td>Consultation</td>
-    <td>$20</td>
-  </tr>
-</table>
+                        <caption>
+                            <h2>Services</h2>
+                        </caption>
+                        <tr>
+                            <th>Service</th>
+                            <th>Hourly</th>
+                        </tr>
+                        <tr>
+                            <td>Design</td>
+                            <td>$25</td>
+                        </tr>
+                        <tr>
+                            <td>Development</td>
+                            <td>$40</td>
+                        </tr>
+                        <tr>
+                            <td>Consultation</td>
+                            <td>$20</td>
+                        </tr>
+                    </table>
 
-<h2>Contact Us Today!</h2>
-<p>Required information is marked with an asterisk (*)</p>
-<!-- Need to fill in the action with an appropriate PHP script to gather the data-->
-<form action="" method="POST">
-    <label for="myName">* Name:</label>
-    <input type="text" name="myName" id="myName" required><br>
-    <label for="myEmail">* E-mail</label>
-    <input type="text" name="myEmail" id="myEmail" required><br>
+                    <h2 id="formCaption">Contact Us Today!</h2>
+                    <p id="requiredInfoTag">Required information is marked with an asterisk (*)</p>
+                    <!-- Need to fill in the action with an appropriate PHP script to gather the data-->
+                    <form action="" method="POST">
+                        <label for="myName">* Name:</label>
+                        <input type="text" name="myName" id="myName" placeholder="Name" required><br>
+                        <label for="myEmail">* E-mail</label>
+                        <input type="text" name="myEmail" id="myEmail" placeholder="email@gmail.com" required><br>
 
-    <label for="myComments">* Comments:</label>
-    <textarea name="myComments" id="myComments" rows="2" cols="20" required></textarea>
-    <input id="mySubmit" type="submit" value="Submit">
-    <!--<button id="mySubmit">Send Now!</button>-->
-    </form>
+                        <label for="myComments">Comments:</label>
+                        <textarea name="myComments" id="myComments" rows="11" cols="20"  placeholder="I would like to hire you!" required></textarea>
+                        <input id="mySubmit" type="submit" value="Submit">
+                        
+                    </form>
 
                 </div>
             </main>

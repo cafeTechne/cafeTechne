@@ -1,0 +1,325 @@
+body {
+    /*font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;*/
+    font-family: Lato, Verdana, Geneva, Tahoma, sans-serif;
+    /*Loads system fonts on smaller devices, assuming lower bandwidth */
+
+}
+
+.content {
+    width: 92%;
+    margin: auto;
+    max-width: 75ch;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 70px;
+    padding-left: 0px;
+}
+
+h2 {
+    font-size: 1.2725rem;
+    margin-bottom: 7px;
+    margin-top: 0;
+}
+
+/*
+    button {
+        display: block;
+        width: 100%;
+        padding: 2%;
+
+    }
+*/
+main {
+    width: 95%;
+    margin: auto;
+}
+
+h3 {
+    font-size: 1.9rem;
+    margin-top: .3rem;
+}
+
+p {
+    font-family: 'Crimson Text', serif;
+    text-justify: inter-word;
+    width: 75ch;
+    margin: 0 0 0 1em;
+    padding: 0;
+    font-size: 1.525rem;
+    padding-bottom: .5rem;
+    padding-top: .1355rem;
+    width: auto;
+    text-rendering: optimizeLegibility;
+}
+
+p {
+    width: 90%;
+    text-align: justify;
+    text-justify: left;
+}
+
+.mainContent .content {
+    width: 95%;
+    text-align: justify;
+    margin: 0 auto;
+    text-indent: 2rem;
+    font-size: 20px;
+}
+
+.mainContent {
+    margin-top: -20px;
+}
+
+header #brandName {
+    display: absolute;
+    font-size: 3.8rem;
+}
+
+.hamburger {
+    top: -4px;
+    left: 5px;
+}
+
+
+.heroImage {
+    max-width: 100%;
+    position: static;
+    display: block;
+    margin: 10% auto;
+    margin-top: 48px;
+    margin-bottom: 0px;
+}
+
+.heroText {
+    font-family: 'Lato Black', Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    position: relative;
+    bottom: 2.4rem;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+
+/***********************************************************************
+*Sets the links in the top right to disappear on screens bigger than 1130px
+*
+************************************************************************/
+.portfolioLink {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.aboutLink {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.servicesLink {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+
+
+#firstContentHR {
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+table {
+    margin: 60px auto 0px auto;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid #2f2f2f;
+
+}
+
+thead th:nth-child(1) {
+    width: 60%;
+}
+
+thead th:nth-child(2) {
+    width: 40%;
+}
+
+
+th,
+td {
+    padding: 20px;
+}
+
+table tr {
+    margin-top: 5px;
+    padding: 0px;
+}
+
+table td {
+    letter-spacing: 1px;
+    padding: 0px;
+}
+
+tbody td {
+    text-align: center;
+}
+
+tfoot th {
+    text-align: right;
+    padding: 0px;
+}
+
+table th {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    padding: 0px;
+}
+
+table tbody tr td {
+    font-size: 1rem;
+    margin: -10px;
+    padding: -25px;
+}
+
+caption h2 {
+    font-size: 3rem;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    margin-left: 0px;
+    color: #2f2f2f;
+}
+
+#formCaption {
+    margin-left: 20px;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 50px;
+    color: #2f2f2f;
+
+}
+
+#requiredInfoTag {
+    font-size: .70rem;
+    font-style: italic;
+    margin-top: -15px;
+    margin-left: 4px;
+    display: none;
+}
+
+form {
+    font-family: 'Lato Black', Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px 0px 0px 0px;
+    margin-bottom: 35px;
+
+}
+
+label {
+    float: left;
+    width: 100px;
+    clear: left;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 5px;
+    font-size: .75rem;
+    display: none;
+    /*Since we set to display: none, have to readjust the margins
+        on the input fields... */
+}
+
+input,
+textarea {
+    margin-top: 2px;
+    display: block;
+    margin-bottom: 0px;
+}
+
+textarea {
+    vertical-align: top;
+    height: 22em;
+}
+
+#mySubmit {
+    margin-left: 110px;
+    margin-top: 12px;
+}
+
+input,
+textarea,
+select,
+button,
+#mySubmit {
+    width: 100%;
+    max-width: 435px;
+    margin: 0 auto;
+
+    -webkit-box-sizing: border-box;
+    /* For legacy WebKit based browsers */
+    -moz-box-sizing: border-box;
+    /* For legacy (Firefox <29) Gecko based browsers */
+    box-sizing: border-box;
+}
+
+input,
+textarea,
+select {
+    background-color: black;
+    color: white;
+}
+
+#mySubmit {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to right, rgb(121, 195, 231), rgb(211, 234, 248));
+    color: black;
+}
+
+thead th,
+tfoot th,
+tfoot td {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
+    border: 3px solid #2f2f2f;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #2567ba;
+    color: #e5ecf5;
+}
+
+tbody tr:nth-child(even) {
+    background-image: linear-gradient(to right, rgb(211, 234, 248), #8EB8CC);
+}
+
+table {
+    background-color: #8EB8CC;
+}
+
+#servicesTable {
+    width: 100%;
+    max-width: 435px;
+    padding: 0px;
+}
+
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #e5ecf5;
+    opacity: 1;
+    /* Firefox */
+    font-family: monospace, 'Courier New', Courier;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #e5ecf5;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #e5ecf5;
+}
