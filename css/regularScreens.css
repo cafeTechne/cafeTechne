@@ -40,6 +40,7 @@
 
 .siteMap a {
     display: block;
+    
 }
 
 
@@ -279,4 +280,10 @@ table {
 ::-ms-input-placeholder {
     /* Microsoft Edge */
     color: #e5ecf5;
+}
+
+#biographyContent{
+    margin-bottom: 55px;
+    width: 68ch;
+    margin-top: 50px;
 }

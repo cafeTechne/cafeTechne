@@ -323,3 +323,11 @@ table {
     /* Microsoft Edge */
     color: #e5ecf5;
 }
+#biographyContent{
+    margin-bottom: 68px;
+    max-width: 40ch;
+    margin-top: 50px;
+}
+div .calendar{
+    display: none;
+}

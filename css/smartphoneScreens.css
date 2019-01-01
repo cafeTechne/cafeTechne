@@ -287,3 +287,17 @@ table {
     /* Microsoft Edge */
     color: #e5ecf5;
 }
+
+
+@media only screen and (max-width : 634px){
+    div .calendar{
+        display: none;
+    }
+}
+#biographyContent{
+    margin-bottom: 200px;
+}
+
+.content #biographyContent{
+    margin-bottom: 200px;
+}

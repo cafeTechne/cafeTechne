@@ -497,7 +497,6 @@ ul li p{
 
 
 #aboutPicture{
-    border-radius: 50%;
     margin: 0 auto;
     margin-top: 150px;
     margin-bottom: 50px;
@@ -510,7 +509,14 @@ ul li p{
     margin-right: auto;
     
 }
+#bioListHeader{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    padding: 0;
+}
 #bioList ul li{
+    font-family: 'Crimson Text', serif;
     display: block;
     text-align: center;
     margin: 0 auto;
@@ -553,4 +559,51 @@ form{
 }
 caption{
     color: #ba7825;
+}
+#thankYou{
+    
+    font-size: 3rem;
+    margin: 200px auto 25px auto;
+}
+h4{
+    font-size: 1rem;
+    text-justify: center;
+    
+    max-width: 50ch;
+    
+    margin: 40px auto;
+    
+    
+}
+#thankYouMessage{
+    font-size: .9rem;
+    margin: 0 auto;
+    
+}
+#thankYouContent{
+    margin-bottom: 500px;
+    text-indent: 0rem;
+}
+.subnav{
+    display: none;
+}
+div.d-flex:nth-child(1){
+    display: none;
+}
+.js-activity-overview-graph-container{
+    display: none;
+}
+div .calendar{
+    margin-bottom: 45px;
+    font-family: 'Lato';
+    
+}
+div .contrib-legend{
+margin: 0;
+padding: 0;
+margin-top: -50px;
+display: none;
+}
+#user-activity-overview{
+    display: none;
 }
