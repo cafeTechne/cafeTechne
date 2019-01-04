@@ -498,8 +498,9 @@ ul li p{
 
 #aboutPicture{
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 110px;
     margin-bottom: 50px;
+    filter: grayscale(1);
 }
 
 .mainContent img{

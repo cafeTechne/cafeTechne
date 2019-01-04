@@ -48,7 +48,7 @@ p {
 }
 
 .mainContent {
-    margin-top: 0px;
+    margin-top: 20px;
 }
 
 
@@ -93,6 +93,9 @@ p {
 }
 
 #firstAnchorEndMark {
+    display: none;
+}
+.anchorEndMark{
     display: none;
 }
 
@@ -300,4 +303,7 @@ table {
 
 .content #biographyContent{
     margin-bottom: 200px;
+}
+#aboutPicture{
+    margin-bottom: 65px;
 }
