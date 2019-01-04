@@ -1,19 +1,20 @@
   /* latin */
   @font-face {
     font-family: 'Lato';
-    font-style: normal;
-    font-weight: 900;
-    src: local('Lato Black'), local('Lato-Black'), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh50XSwiPGQ.woff2) format('woff2');
+    font-style: italic;
+    font-weight: 100;
+    src: local('Lato Hairline Italic'), local('Lato-HairlineItalic'), url(https://fonts.gstatic.com/s/lato/v14/S6u-w4BMUTPHjxsIPx-oPCI.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
-@font-face {
+
+  /* latin */
+  @font-face {
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
-    src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+    src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wXg.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
+  }
 /* latin */
 @font-face {
     font-family: 'Crimson Text';
@@ -22,6 +23,8 @@
     src: local('Crimson Text Regular'), local('CrimsonText-Regular'), url(https://fonts.gstatic.com/s/crimsontext/v8/wlp2gwHKFkZgtmSR3NB0oRJfbwhT.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
+
 
 body {
     margin: 0;
@@ -425,6 +428,7 @@ footer img {
     -moz-transition: 0.2s ease;
     -o-transition: 0.2s ease;
     transition: 0.2s ease;
+    
 }
 
 .heroContainer {
@@ -446,13 +450,21 @@ footer img {
     display: inline;
     position: relative;
     margin: 0;
-    padding: 0;
+    
 }
 
 .portfolioPages{
     display: block;
     margin: 0px;
     padding: 0px;
+    
+
+}
+.panelForListItem h3{
+    color: white;
+}
+.portfolioCard a{
+    
 }
 
 .portfolioCard a img{
@@ -461,11 +473,12 @@ footer img {
     padding: 0 5px;
     width: 100%;
     max-width: 300px;
+    margin: auto;
 }
 
 ul{
     margin: 0 0;
-    padding: 0 0;
+    padding: 0px 0px 50px 0px;
 }
 ul li{
     list-style-type: none;
@@ -534,12 +547,6 @@ ol{
     list-style-position: inside;
     margin-bottom: 200px;
 }
-h4{
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 0;
-    margin-top: 30px;
-}
 label{
 	display: block;
 	float: left;
@@ -566,16 +573,7 @@ caption{
     font-size: 3rem;
     margin: 200px auto 25px auto;
 }
-h4{
-    font-size: 1rem;
-    text-justify: center;
-    
-    max-width: 50ch;
-    
-    margin: 40px auto;
-    
-    
-}
+
 #thankYouMessage{
     font-size: .9rem;
     margin: 0 auto;
@@ -596,7 +594,7 @@ div.d-flex:nth-child(1){
 }
 div .calendar{
     margin-bottom: 45px;
-    font-family: 'Lato';
+    font-family: 'Lato', Verdana, Geneva, Tahoma, sans-serif;
     
 }
 div .contrib-legend{
@@ -607,4 +605,157 @@ display: none;
 }
 #user-activity-overview{
     display: none;
+}
+.panelForListItem{
+    background-color: black;
+    border-radius: .71%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.portfolioCard:first-child{
+    margin-top: 150px;
+}
+li{
+    padding: 0px 0xp 50px 0px
+}
+.location{
+    margin-top: -10px;
+}
+h4{
+    text-align: center;
+    margin: 0px auto 10px auto;
+    padding: 0px 0px 11px 0px;
+    color: #efefef;
+    font-family: 'Lato Hairline Italic, italic';
+    font-weight: 100;
+    font-style: italic;
+    font-size: .79rem;
+    letter-spacing: .05ch;
+}
+.siteDetails{
+ color: #eeffee;
+ margin: 0px auto;
+ max-width: 70ch;   
+ padding: 0px auto;
+ 
+ text-justify: left;
+}
+h5{
+    font-family: 'Crimson Text', serif;
+    color: black;
+    padding-bottom: 30px;
+    
+}
+.siteDetails{
+    color: #e5ecf5;
+    margin: 0px auto;
+    max-width: 70ch;   
+    font-family: 'Lato', Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px 85px 0px 118px;
+    text-justify: left;
+    font-style: normal;
+    font-weight: normal;
+    font-size: .9rem;
+    padding-bottom: 18px;
+    margin-top: -5px;
+    padding-top: -30px;
+   }
+.siteDetails a{
+    text-decoration: none;
+    color: #ba7825;
+    padding: 0px;
+    padding-left: .3ch;
+}
+.siteDetails a:visited{
+    text-decoration: none;
+    color: rgb(0, 166, 0);
+}
+.panelForListItem h3:nth-of-type(1){
+    color: #795548;
+    margin-top: -10px;
+}
+.panelForListItem h3:nth-of-type(2){
+    color: rgb(0, 166, 0);
+    margin-top: -10px;
+}
+/* brown #4e342e*/
+body > main > div.portfolioPages > ul > li:nth-child(4) > h5{
+    padding-right: 101px;
+}
+
+
+body > main > div.portfolioPages > ul > li:nth-child(3) > h5 > a{
+    color: #8b7370;
+}
+body > main > div.portfolioPages > ul > li:nth-child(3) > h5 > a:visited{
+    color: #8f5a52;
+}
+body > main > div.portfolioPages > ul > li:nth-child(3) > h5 > a:hover{
+    color: #918381;
+}
+
+
+/*PortfolioPage 1: text colors*/
+body > main > div.portfolioPages > ul > li:nth-child(1) > h3{
+    color: #ff6f00;
+}
+body > main > div.portfolioPages > ul > li:nth-child(1) > h5 > a{
+    color: #80cbc4;
+}
+body > main > div.portfolioPages > ul > li:nth-child(1) > h5 > a:visited{
+    color: #ff6f00;
+}
+body > main > div.portfolioPages > ul > li:nth-child(1) > h5 > a:hover{
+    color: #009688;
+}
+
+/*PortfolioPage 2: text colors*/
+body > main > div.portfolioPages > ul > li:nth-child(2) > h3{
+    color: rgb(0, 166, 0);
+}
+body > main > div.portfolioPages > ul > li:nth-child(2) > h5 > a{
+    color: rgb(0, 166, 0);
+}
+body > main > div.portfolioPages > ul > li:nth-child(2) > h5 > a:visited{
+    color: #ff6f00;
+}
+body > main > div.portfolioPages > ul > li:nth-child(2) > h5 > a:hover{
+    color: rgb(0, 255, 0);
+}
+
+
+/*PortfolioPage 3: */
+
+#bandSiteTemplateHeader{
+    color: #F273BC;
+    color: #77cf7f;
+}
+body > main > div.portfolioPages > ul > li:nth-child(4) > h5 {
+    color: #F273BC;
+    margin-top: 10px;
+}
+body > main > div.portfolioPages > ul > li:nth-child(4) > h5 > a{
+    color: #77cf7f;
+}
+body > main > div.portfolioPages > ul > li:nth-child(4) > h5 > a:visited{
+    color: white;
+}
+body > main > div.portfolioPages > ul > li:nth-child(4) > h5 > a:hover{
+    color: #15C6CC; 
+}
+
+
+
+/*PortfolioPage 5: text colors*/
+body > main > div.portfolioPages > ul > li:nth-child(5) > h3{
+    color: #788aa7;
+}
+body > main > div.portfolioPages > ul > li:nth-child(5) > h5 > a{
+    color: #4b477a;
+}
+body > main > div.portfolioPages > ul > li:nth-child(5) > h5 > a:visited{
+    color: #0645ad;
+}
+body > main > div.portfolioPages > ul > li:nth-child(5) > h5 > a:hover{
+    color: #788aa7;
 }

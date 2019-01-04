@@ -307,3 +307,36 @@ table {
 #aboutPicture{
     margin-bottom: 65px;
 }
+.portfolioCard:first-child{
+    margin-top: 14px;
+}
+.siteDetails{
+    color: #e5ecf5;
+    margin: 0px auto;
+    max-width: 70ch;   
+    font-family: 'Lato', Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px 55px 0px 65px;
+    text-justify: left;
+    font-style: normal;
+    font-weight: normal;
+    font-size: .9rem;
+    padding-bottom: 25px;
+    margin-top: -14px;
+   }
+.siteDetails a{
+    text-decoration: none;
+    color: #ba7825;
+}
+.siteDetails a:visited{
+    text-decoration: none;
+    color: rgb(0, 166, 0);
+}
+
+#location2{
+    margin-top: -5px;
+}
+body > main > div.portfolioPages > ul > li:nth-child(4) > h5 {
+    color: #F273BC;
+    margin-left: 45px;
+    margin-top: 10px;
+}

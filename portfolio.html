@@ -26,10 +26,11 @@
 
 
     <link rel="stylesheet" media="all" type="text/css" href="css/style.css">
-    <link rel="stylesheet" media="only screen and (min-device-width : 320px) and (max-device-width : 490px)" type="text/css" href="css/smartphoneScreens.css">
+    <link rel="stylesheet" media="only screen and (min-device-width : 320px) and (max-device-width : 490px)" type="text/css"
+        href="css/smartphoneScreens.css">
     <link rel="stylesheet" type="text/css" media="only screen and (min-width: 491px) and (max-width: 1129px)" href="css/491to1129.css">
     <link rel="stylesheet" type="text/css" media="only screen and (min-width: 1130px)" href="css/regularScreens.css">
-    
+
     <!--This is the CSS file for the font stack, courtesy of iconomoon.io-->
     <link rel="stylesheet" type="text/css" href="fonts.css">
 
@@ -76,67 +77,104 @@
         <nav id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <ul>
-                <a href="index.html" target="_blank" title="Go to Home section"><span class="icon-home3"></span><span class="navigationText">Home</span></a>
+                <a href="index.html" target="_blank" title="Go to Home section"><span class="icon-home3"></span><span
+                        class="navigationText">Home</span></a>
                 <a href="tel:3479214466" target="_blank" title="Call Me!"><span class="icon-phone"></span><span class="navigationText">Call</span></a>
-                <a href="mailto:cafetechne@gmail.com" target="_blank" title="Email link."><span class="icon-envelope-o"></span><span class="navigationText">Email</span></a>
-                <a href="services.html" target="_blank" title="Go to Services section"><span class="icon-magic-wand"></span><span class="navigationText">Services</span></a>
-                <a href="portfolio.html" target="_blank" title="Go to Portfolio section"><span class="icon-power"></span><span class="navigationText">Portfolio</span></a>
-                <a href="about.html" target="_blank" title="Go to About section"><span class="icon-users"></span><span class="navigationText">About</span></a>
-                <a href="https://github.com/cafetechne.com" target="_blank" title="Go to my github page"><span class="icon-terminal"></span><span class="navigationText">Code</span></a>
+                <a href="mailto:cafetechne@gmail.com" target="_blank" title="Email link."><span class="icon-envelope-o"></span><span
+                        class="navigationText">Email</span></a>
+                <a href="services.html" target="_blank" title="Go to Services section"><span class="icon-magic-wand"></span><span
+                        class="navigationText">Services</span></a>
+                <a href="portfolio.html" target="_blank" title="Go to Portfolio section"><span class="icon-power"></span><span
+                        class="navigationText">Portfolio</span></a>
+                <a href="about.html" target="_blank" title="Go to About section"><span class="icon-users"></span><span
+                        class="navigationText">About</span></a>
+                <a href="https://github.com/cafetechne.com" target="_blank" title="Go to my github page"><span class="icon-terminal"></span><span
+                        class="navigationText">Code</span></a>
             </ul>
         </nav>
         <!-- FAB : <div class="contactButton"><span class="icon-share2 icon"></span></div> -->
     </header>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
 
-    <main class="content">        
+    <main class="content">
         <div class="mainContent">
-    <h2>Portfolio</h2>
+            <h2 id="portfolioHeader">Portfolio</h2>
         </div>
-    
-    <div class="portfolioPages">
-    <ul>
-    
-    <li>
-            <div class="portfolioCard"><a href="http://cafetechne.com/green-acupuncture"><img src="images/green-acupuncture.png" alt=""></a></div>
-    </li>
-    <li>
-            <div class="portfolioCard"><a href="http://cafetechne.com/vt323"><img src="images/vt323.png" alt=""></a></div>
-    </li>
-    <li>
-            <div class="portfolioCard"><a href="http://tahoecitytile.com"><img src="images/tahoeCityTile.png" alt=""></a></div>
-    </li>
-    <li>
-            <div class="portfolioCard"><a href="http://cafetechne.com/manjeet"><img src="images/manjeet.png" alt=""></a></div>
-    </li>
-    
 
-    </ul>        
-    
-</div>
-</main>
+        <div class="portfolioPages">
+            <ul>
+
+
+                <li class="panelForListItem">
+                    <div class="portfolioCard"><a id="linkToGithub" href="http://cafetechne.com/green-acupuncture" target="_blank"><img
+                                src="images/green-acupuncture.png" alt=""></a></div>
+                    <h3>Green Wellness Acupuncture</h3>
+                    <h4 class="location">Massapequa, New York <span class="subLocation"> ~ Suffolk County, Long Island</span></h4>
+                    <h5 class="siteDetails">This site was made with<a href="https://materializecss.com/" target="_blank">Materialize.css</a>,
+                        Javascript,<a href="https://jquery.com/" target="_blank">JQuery</a>and an Open-Source
+                        Appointment Calendar app in PHP on the backend powered by<a href="https://github.com/alextselegidis/easyappointments"
+                            target="_blank">Easy!Appointments.</a> </h5>
+                </li>
+                <li class="panelForListItem">
+                    <div class="portfolioCard"><a href="http://cafetechne.com/vt323"><img src="images/vt323.png" alt=""></a></div>
+                    <h3>VT323 Font Specimen</h3>
+                    <h4 id="location2">Cyberspace</h4>
+                    <h5 class="siteDetails">My first Font Specimen: This is a homage to the font <a href="https://fonts.google.com/specimen/VT323"
+                            target="_blank">VT323</a>, by <a href="https://twitter.com/phoikoi" target="_blank">Peter
+                            Hull</a>--which itself a homage to a bygone era of dial-up terminals. This site was made
+                        from scratch and uses <a href="https://jquery.com/" target="_blank"> JQuery</a> and pure
+                        Javascript to emulate the keystrokes (sound included via deep-copying the samples for overlay)
+                        of a virtual terminal. The full exhibit is only capable of being seen on a full sized screen.
+                        Placeholder ASCII art is on the mobile version. Music by <a href="https://soundcloud.com/adhesivewombat" target="_blank">Adhesive
+                            Wombat.</a> Credits for the awesome ASCII belong to <a href="https://www.asciiart.eu/computers/computers" target="_blank">Roland
+                            Hangg</a></h5>
+                </li>
+                <li class="panelForListItem">
+                    <div class="portfolioCard"><a href="http://tahoecitytile.com" target="_blank"><img src="images/tahoeCityTile.png"
+                                alt=""></a></div>
+                    <h3>Tahoe City Tile</h3>
+                    <h4 class="location">Lake Tahoe, California<span class="subLocation"> ~ West Lake</span></h4>
+                    <h5 class="siteDetails">This site was made with Materialize.css, Javascript, JQuery and all e-mails
+                        link to jon@tahoecitytile.com--an e-mail address managed and hosted by me through<a href="https://en.wikipedia.org/wiki/CPanel"
+                            target="_blank">cPanel</a> using <a href="https://en.wikipedia.org/wiki/Post_Office_Protocol" target="_blank">Post
+                            Office Protocol POP3</a> and<a href="https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol" target="_blank">Simple
+                            Mail Transfer Protocol (SMTP)</a>.</h5>
+                </li>
+                <li class="panelForListItem">
+                    <div class="portfolioCard"><a href="http://cafetechne.com/manjeet" target="_blank"><img src="images/manjeet.png"
+                                alt=""></a></div>
+                    <h3 id="bandSiteTemplateHeader">Band Site Template:<br>Web Design Project</h3>
+                    <h5 class="siteDetails">
+                    This Website was made from scratch using nothing but HTML5 and CSS3 for a web design class I took with <a href="https://twitter.com/sofafort">Erik Dunham.</a> Attribution for the images is in the comments of the index.html of the homepage and their respective licenses are all <a href="https://creativecommons.org/">Creative Commons</a>.
+                    </h5>
+                </li>
+                <li class="panelForListItem">
+                    <div class="portfolioCard"><a href="https://www.cafetechne.com/borderwars/mediawiki-1.29.1/index.php/Main_Page#" target="_blank"><img
+                                src="images/screencaptureBorderWars.png" alt=""></a></div>
+                    <h3>Game Design Wiki</h3>
+                    <h5 class="siteDetails">This is a wiki for a multiplayer game I am designing. Lore for the world is broken down by subcategories. Built using MediaWiki: "The collaborative editing software that runs Wikipedia". Source code is available <a href="https://github.com/wikimedia/mediawiki" target="_blank">here.</a> Implemented via my virtual host using <a href="http://www.php.net/">PHP</a>. </h5>
+                </li>
+
+            </ul>
+
+        </div>
+    </main>
 
     <div class="siteMap">
         <a href="services.html" target="_blank" tabindex="1" title="Go to the Services section">Services</a>
         <a href="portfolio.html" target="_blank" tabindex="2" title="Go to the Portfolio section">Portfolio</a>
-        <a href="about.html" target="_blank"  tabindex="3" title="Go to About section">About</a>
-        <a href="tel:3479214466" target="_blank"  tabindex="4" title="Call me!">Call</a>
-        <a href="mailto:cafetechne@gmail.com" target="_blank"  tabindex="5" title="Email me!">Email</a>
-        <a href="https://github.com/cafetechne" target="_blank"  tabindex="6" title="Go to my github page">Code</a>
+        <a href="about.html" target="_blank" tabindex="3" title="Go to About section">About</a>
+        <a href="tel:3479214466" target="_blank" tabindex="4" title="Call me!">Call</a>
+        <a href="mailto:cafetechne@gmail.com" target="_blank" tabindex="5" title="Email me!">Email</a>
+        <a href="https://github.com/cafetechne" target="_blank" tabindex="6" title="Go to my github page">Code</a>
     </div>
     <footer class="footer">
         <a href="https://twitter.com/cafetechne" target="_blank" title="Go to my twitter page" tabindex="7"><span class="icon-twitter icon"></span></a>
         <a href=""><span class="icon-play icon" target="_blank" title="Go to my youtube page" tabindex="8"></span></a>
-        <a href="https://github.com/cafetechne" target="_blank" title="Go to github page" tabindex="9"><span class="icon-github icon" ></span></a>
-        <a href="https://soundcloud.com/cafetechne" target="_blank" title="Go to my soundcloud page" tabindex="10"><span class="icon-soundcloud icon"></span></a>
+        <a href="https://github.com/cafetechne" target="_blank" title="Go to github page" tabindex="9"><span class="icon-github icon"></span></a>
+        <a href="https://soundcloud.com/cafetechne" target="_blank" title="Go to my soundcloud page" tabindex="10"><span
+                class="icon-soundcloud icon"></span></a>
 
         <!--Left out, but the uploaded glyphs in this template support these icons.
                 <span class="icon-instagram icon"></span>
@@ -157,4 +195,5 @@
 <!--Mail Icon: 	Hüseyin Çakır , iconfinder CC 3.0 Attribution, https://www.iconfinder.com/icons/3066965/circle_e-mail_high_quality_mail_media_social_social_media_icon  -->
 <!--Social Media Icons: Anton Drukarov, https://www.iconfinder.com/Indygo -->
 <!--SeaPhoto (heroImage) : CC0, pxhere: https://pxhere.com/en/photo/705346 -->
+
 </html>
