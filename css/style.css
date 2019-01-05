@@ -292,7 +292,6 @@ h2 {
     font-size: 1.7815rem;
     padding-bottom: 1px;
     line-height: 1.75;
-
 }
 
 h3 {
@@ -560,13 +559,14 @@ input, textarea{
 	margin-bottom: 2em;
 }
 #mySubmit{
-	margin-left: 12em;
+    margin-left: 12em;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.12), 0 2px 10px 0 rgba(0, 0, 0, 0.16);
 }
 form{
 	padding: 3em;
 }
 caption{
-    color: #ba7825;
+    color: #ba7825; 
 }
 #thankYou{
     
@@ -650,7 +650,7 @@ h5{
     color: #e5ecf5;
     margin: 0px auto;
     max-width: 70ch;   
-    font-family: 'Lato', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Lato Regular', Verdana, Geneva, Tahoma, sans-serif;
     padding: 0px 85px 0px 118px;
     text-justify: left;
     font-style: normal;
@@ -678,22 +678,6 @@ h5{
     color: rgb(0, 166, 0);
     margin-top: -10px;
 }
-/* brown #4e342e*/
-body > main > div.portfolioPages > ul > li:nth-child(4) > h5{
-    padding-right: 101px;
-}
-
-
-body > main > div.portfolioPages > ul > li:nth-child(3) > h5 > a{
-    color: #8b7370;
-}
-body > main > div.portfolioPages > ul > li:nth-child(3) > h5 > a:visited{
-    color: #8f5a52;
-}
-body > main > div.portfolioPages > ul > li:nth-child(3) > h5 > a:hover{
-    color: #918381;
-}
-
 
 /*PortfolioPage 1: text colors*/
 body > main > div.portfolioPages > ul > li:nth-child(1) > h3{
@@ -726,6 +710,24 @@ body > main > div.portfolioPages > ul > li:nth-child(2) > h5 > a:hover{
 
 /*PortfolioPage 3: */
 
+body > main > div.portfolioPages > ul > li:nth-child(3) > h5 > a{
+    color: #8b7370;
+}
+body > main > div.portfolioPages > ul > li:nth-child(3) > h5 > a:visited{
+    color: #8f5a52;
+}
+body > main > div.portfolioPages > ul > li:nth-child(3) > h5 > a:hover{
+    color: #918381;
+}
+
+
+/*PortfolioPage 4: */
+
+/* brown #4e342e*/
+body > main > div.portfolioPages > ul > li:nth-child(4) > h5{
+    padding-right: 101px;
+}
+    
 #bandSiteTemplateHeader{
     color: #F273BC;
     color: #77cf7f;
@@ -745,7 +747,7 @@ body > main > div.portfolioPages > ul > li:nth-child(4) > h5 > a:hover{
 }
 
 
-
+ 
 /*PortfolioPage 5: text colors*/
 body > main > div.portfolioPages > ul > li:nth-child(5) > h3{
     color: #788aa7;
@@ -758,4 +760,53 @@ body > main > div.portfolioPages > ul > li:nth-child(5) > h5 > a:visited{
 }
 body > main > div.portfolioPages > ul > li:nth-child(5) > h5 > a:hover{
     color: #788aa7;
+}
+
+#myComments{
+    background-image: linear-gradient(180deg, #2567ba, rgba(36, 182, 240, 0.75),#2567ba);
+    border-radius: 1.25%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.9), 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+}
+#myEmail{
+    background-image: linear-gradient(180deg, #2567ba, rgba(53, 193, 248, 0.75),#2567ba);
+    box-shadow: 0 2.21px 5.1px 0 rgba(0, 0, 0, 0.14), 0 2px 10px 0 rgba(0, 0, 0, 0.14);
+    border: 1px solid rgb(10, 40, 68);
+    border-radius: 1.25%;
+    border-radius: 2.25% 0 25px 25px;
+    text-align: center;
+}
+#myName{
+    background-image: linear-gradient(180deg, #2567ba, rgba(57, 189, 241, 0.75),#2567ba);
+    border-radius: 2.25%;
+    box-shadow: 0 2.2px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 10px 0 rgba(0, 0, 0, 0.14);
+    border: 1px solid rgb(10, 40, 68);
+    border-radius: 25px 25px 0 0;
+    text-align: center;
+    
+}
+textarea{
+    border-radius: 1.15%;
+    resize: none;
+    box-sizing: border-box;
+    font-family: 'Lato', Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid rgb(10, 40, 68);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    text-align: center;
+}
+td{
+    border: 1px solid rgb(22, 62, 100);
+}
+tbody{
+    border-radius: 25px 25px 25px 25px;
+    caption-side: bottom;
+}
+tbody tr{
+    border-radius: 25px 25px 25px 25px;
+    
+}
+@media only screen and (max-width: 750px){
+    caption{
+        color: #ba7825;
+        margin-top: -10px;
+    }
 }
