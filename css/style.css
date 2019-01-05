@@ -510,9 +510,13 @@ ul li p{
 
 #aboutPicture{
     margin: 0 auto;
-    margin-top: 110px;
+    margin-top: 125px;
     margin-bottom: 50px;
     filter: grayscale(1);
+    border-radius: 4.66% 4.66% 5.66% 5.66%;
+    box-shadow: 0px 3px 4px rgba(0,0,0,0.275);
+    border: 1px solid rgb(22, 62, 100);
+    
 }
 
 .mainContent img{
@@ -567,6 +571,7 @@ form{
 }
 caption{
     color: #ba7825; 
+    text-align: right;
 }
 #thankYou{
     
@@ -655,10 +660,11 @@ h5{
     text-justify: left;
     font-style: normal;
     font-weight: normal;
-    font-size: .9rem;
+    font-size: .8525rem;
     padding-bottom: 18px;
     margin-top: -5px;
     padding-top: -30px;
+    margin-left: -10px;
    }
 .siteDetails a{
     text-decoration: none;
@@ -681,7 +687,7 @@ h5{
 
 /*PortfolioPage 1: text colors*/
 body > main > div.portfolioPages > ul > li:nth-child(1) > h3{
-    color: #ff6f00;
+    color: #0cc9b6;
 }
 body > main > div.portfolioPages > ul > li:nth-child(1) > h5 > a{
     color: #80cbc4;
@@ -799,14 +805,59 @@ td{
 tbody{
     border-radius: 25px 25px 25px 25px;
     caption-side: bottom;
+    border-collapse: collapse;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
 }
 tbody tr{
     border-radius: 25px 25px 25px 25px;
     
 }
+
+
 @media only screen and (max-width: 750px){
     caption{
         color: #ba7825;
         margin-top: -30px;
     }
+    #aboutPicture{
+        margin: 0 auto;
+        margin-top: 90px;
+        margin-bottom: 50px;
+        filter: grayscale(1);
+    }
+}
+#servicesTable > tbody > tr:nth-child(1){
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+    border: 1px solid rgb(22, 62, 100);
+}
+#servicesTable > tbody > tr:nth-child(2){
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+    border: 1px solid rgb(22, 62, 100);
+}
+#servicesTable > tbody > tr:nth-child(3){
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+    border: 1px solid rgb(22, 62, 100);
+}
+
+#servicesTable > tbody > tr > td{
+    text-align: center;
+    border: 1px solid rgb(22, 62, 100);
+    padding: 10px;
+    padding-left: 0px;
+    padding-right: 25px;
+}
+#servicesTable > tbody > tr > th{
+    text-justify: center;
+    padding-left: 0px;
+
+}
+#servicesTable > tbody > tr:nth-child(1) > th:nth-child(1){
+    text-align: center;
+    
+    border: 1px solid rgb(22, 62, 100);
+}
+#servicesTable > tbody > tr:nth-child(1) > th:nth-child(2){
+    text-align: center;
+    border: 1px solid rgb(22, 62, 100);
 }
