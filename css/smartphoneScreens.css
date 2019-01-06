@@ -315,13 +315,15 @@ table {
     margin: 0px auto;
     max-width: 70ch;   
     font-family: 'Lato', Verdana, Geneva, Tahoma, sans-serif;
-    padding: 0px 55px 0px 65px;
     text-justify: left;
     font-style: normal;
     font-weight: normal;
-    font-size: .9rem;
+    font-size: 1.1rem;
     padding-bottom: 25px;
-    margin-top: -14px;
+    margin-top: 0px;
+    margin-left: -15px;
+    padding-left: 55px;
+    padding-right: 35px;
    }
 .siteDetails a{
     text-decoration: none;
@@ -337,6 +339,23 @@ table {
 }
 body > main > div.portfolioPages > ul > li:nth-child(4) > h5 {
     color: #F273BC;
-    margin-left: 45px;
+    margin-left: -30px;
     margin-top: 10px;
+    font-size: 1rem;
+    margin: 0px 5px 30px 0px;
+}
+.location{
+margin-top: 0 px;
+margin-bottom: 0px;
+font-size: .9rem;
+}
+body > main > div.portfolioPages > ul > li:nth-child(1) > h5{
+    padding: 0px 50px 30px 30px;
+    margin: 0px 50px 30px 40px;
+    font-size: 1.1rem;
+    
+}
+body > main > div.portfolioPages > ul > li:nth-child(1){
+
+    padding-bottom: 25px;
 }

@@ -188,7 +188,7 @@ footer {
 .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #ffffff;
+    background-color: #e5ecf5;
     margin: 6px 0;
     -webkit-transition: 0.2s ease;
     -moz-transition: 0.2s ease;
@@ -460,7 +460,7 @@ footer img {
 
 }
 .panelForListItem h3{
-    color: white;
+    color: #e5ecf5;
 }
 .portfolioCard a{
     
@@ -473,6 +473,7 @@ footer img {
     width: 100%;
     max-width: 300px;
     margin: auto;
+    margin-top: 25px;
 }
 
 ul{
@@ -624,13 +625,14 @@ li{
     padding: 0px 0xp 50px 0px
 }
 .location{
-    margin-top: -10px;
+    margin-top: -5px;
+    font-size: 1.1rem;
 }
 h4{
     text-align: center;
     margin: 0px auto 10px auto;
     padding: 0px 0px 11px 0px;
-    color: #efefef;
+    color: #e5ecf5;
     font-family: 'Lato Hairline Italic, italic';
     font-weight: 100;
     font-style: italic;
@@ -638,12 +640,16 @@ h4{
     letter-spacing: .05ch;
 }
 .siteDetails{
- color: #eeffee;
+ color: #e5ecf5;
  margin: 0px auto;
  max-width: 70ch;   
- padding: 0px auto;
- 
+ font-family: 'Lato', Verdana, Geneva, Tahoma, sans-serif;
  text-justify: left;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 1.2rem;
+ padding-bottom: 25px;
+
 }
 h5{
     font-family: 'Crimson Text', serif;
@@ -688,6 +694,7 @@ h5{
 /*PortfolioPage 1: text colors*/
 body > main > div.portfolioPages > ul > li:nth-child(1) > h3{
     color: #0cc9b6;
+    font-size:1.8rem;
 }
 body > main > div.portfolioPages > ul > li:nth-child(1) > h5 > a{
     color: #80cbc4;
@@ -731,7 +738,7 @@ body > main > div.portfolioPages > ul > li:nth-child(3) > h5 > a:hover{
 
 /* brown #4e342e*/
 body > main > div.portfolioPages > ul > li:nth-child(4) > h5{
-    padding-right: 101px;
+    padding-right: 60px;
 }
     
 #bandSiteTemplateHeader{
@@ -741,12 +748,13 @@ body > main > div.portfolioPages > ul > li:nth-child(4) > h5{
 body > main > div.portfolioPages > ul > li:nth-child(4) > h5 {
     color: #F273BC;
     margin-top: 10px;
+    
 }
 body > main > div.portfolioPages > ul > li:nth-child(4) > h5 > a{
     color: #77cf7f;
 }
 body > main > div.portfolioPages > ul > li:nth-child(4) > h5 > a:visited{
-    color: white;
+    color: #15C6CC; 
 }
 body > main > div.portfolioPages > ul > li:nth-child(4) > h5 > a:hover{
     color: #15C6CC; 
@@ -860,4 +868,18 @@ tbody tr{
 #servicesTable > tbody > tr:nth-child(1) > th:nth-child(2){
     text-align: center;
     border: 1px solid rgb(22, 62, 100);
+}
+body > main > div.portfolioPages > ul > li:nth-child(1) > h5{
+    padding: 0px 105px 30px 155px;
+    font-size: .9rem;
+}
+body > main > div.portfolioPages > ul > li:nth-child(4) > h5 {
+    color: #F273BC;
+    margin-left: -30px;
+    margin-top: 10px;
+    font-size: 1rem;
+    margin: 0px 5px 30px -20px;
+}
+body > main > div.portfolioPages > ul > li:nth-child(5) > h5{
+    margin-left: -21px;
 }

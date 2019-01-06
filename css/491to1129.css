@@ -331,3 +331,20 @@ table {
 div .calendar{
     display: none;
 }
+.portfolioCard:first-child{
+    margin-top: 94px;
+}
+.location{
+    font-size: .8rem;
+}
+body > main > div.portfolioPages > ul > li:nth-child(1) > h5{
+    padding: 0px 85px 30px 115px;
+    font-size: .9rem;
+}
+body > main > div.portfolioPages > ul > li:nth-child(4) > h5 {
+    color: #F273BC;
+    margin-left: -30px;
+    margin-top: 10px;
+    font-size: 1rem;
+    margin: 0px 5px 30px -21px;
+}
