@@ -742,8 +742,8 @@ body > main > div.portfolioPages > ul > li:nth-child(4) > h5{
 }
     
 #bandSiteTemplateHeader{
-    color: #F273BC;
-    color: #77cf7f;
+    color: #F273BC;/*kept for reference*/
+    color: #a0eea7;
 }
 body > main > div.portfolioPages > ul > li:nth-child(4) > h5 {
     color: #F273BC;
