@@ -50,7 +50,7 @@ footer {
     margin: 0;
     padding: 0;
     /*background-color: #284e57;*/
-    background-color: #2567ba;
+    background-color: #163C6A;
     color: #e5ecf5;
 
     width: 100%;
@@ -132,7 +132,7 @@ nav button {
     top: 0;
     /* Stay at the top */
     left: 0;
-    background-color: #2567ba;
+    background-color: #163C6A;
     color: #e5ecf5;
     overflow-x: hidden;
     /* Disable horizontal scroll */
@@ -161,7 +161,7 @@ nav button {
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-    color: #ba7825;
+    color: #e4b985;
     padding: 8px;
 }
 
@@ -199,7 +199,7 @@ footer {
 .bar1:hover,
 .bar2:hover,
 .bar3:hover {
-    color: #ba7825;
+    color: #e9c18f;
 }
 
 .hamburger {
@@ -213,7 +213,7 @@ footer {
 }
 
 .hamburger:hover {
-    color: #ba7825;
+    color: #e9c18f;
 }
 
 /* Rotate first bar */
@@ -261,8 +261,7 @@ a {
 main {
     margin: 0;
     padding: 0;
-    background-color: #e8ebf4;
-
+    
 }
 
 .heroImage {
@@ -338,14 +337,14 @@ p {
     display: inline-block;
     cursor: pointer;
     padding: 1em;
-    color: #ba7825
+    color: #e9c18f
 }
 
 .siteMap {
     color: #e5ecf5;
     display: block;
     text-align: justify;
-    background-color: #2567ba;
+    background-color: #163C6A;
     padding-bottom: 20px;
     margin-top: 5px;
     column-count: 3;
@@ -408,7 +407,7 @@ footer img {
 }
 
 .icon:hover {
-    color: #ba7825;
+    color: #e9c18f;
 }
 
 .navigationText {
@@ -441,7 +440,7 @@ footer img {
     margin-top: -21px;
 }
 .siteMap a:hover{
-    color: #ba7825;
+    color: #e9c18f;
     transition: ease .5s;
 }
 .content a{
@@ -460,11 +459,9 @@ footer img {
 
 }
 .panelForListItem h3{
-    color: #e5ecf5;
+    color: black;
 }
-.portfolioCard a{
-    
-}
+
 
 .portfolioCard a img{
     display: block;
@@ -517,6 +514,7 @@ ul li p{
     border-radius: 4.66% 4.66% 5.66% 5.66%;
     box-shadow: 0px 3px 4px rgba(0,0,0,0.275);
     border: 1px solid rgb(22, 62, 100);
+    height: 200px;
     
 }
 
@@ -571,7 +569,7 @@ form{
 	padding: 3em;
 }
 caption{
-    color: #ba7825; 
+    color: black; 
     text-align: right;
 }
 #thankYou{
@@ -612,10 +610,11 @@ display: none;
 #user-activity-overview{
     display: none;
 }
-.panelForListItem{
-    background-color: black;
+.panelForListItem{ 
+    background-color: #ecedf3;
     border-radius: .71%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    
 }
 
 .portfolioCard:first-child{
@@ -627,12 +626,13 @@ li{
 .location{
     margin-top: -5px;
     font-size: 1.1rem;
+    COLOR: black;
 }
 h4{
     text-align: center;
     margin: 0px auto 10px auto;
     padding: 0px 0px 11px 0px;
-    color: #e5ecf5;
+    color: black;
     font-family: 'Lato Hairline Italic, italic';
     font-weight: 100;
     font-style: italic;
@@ -640,7 +640,7 @@ h4{
     letter-spacing: .05ch;
 }
 .siteDetails{
- color: #e5ecf5;
+ color: black;
  margin: 0px auto;
  max-width: 70ch;   
  font-family: 'Lato', Verdana, Geneva, Tahoma, sans-serif;
@@ -658,7 +658,7 @@ h5{
     
 }
 .siteDetails{
-    color: #e5ecf5;
+    color: black;
     margin: 0px auto;
     max-width: 70ch;   
     font-family: 'Lato Regular', Verdana, Geneva, Tahoma, sans-serif;
@@ -674,7 +674,7 @@ h5{
    }
 .siteDetails a{
     text-decoration: none;
-    color: #ba7825;
+    color: #e9c18f;
     padding: 0px;
     padding-left: .3ch;
 }
@@ -693,7 +693,7 @@ h5{
 
 /*PortfolioPage 1: text colors*/
 body > main > div.portfolioPages > ul > li:nth-child(1) > h3{
-    color: #0cc9b6;
+    color: rgb(32, 31, 31);
     font-size:1.8rem;
 }
 body > main > div.portfolioPages > ul > li:nth-child(1) > h5 > a{
@@ -777,12 +777,12 @@ body > main > div.portfolioPages > ul > li:nth-child(5) > h5 > a:hover{
 }
 
 #myComments{
-    background-image: linear-gradient(180deg, #2567ba, rgba(36, 182, 240, 0.75),#2567ba);
+    background-image: linear-gradient(180deg, #163C6A, rgba(31, 143, 187, 0.75),#163C6A);
     border-radius: 1.25%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.9), 0 2px 10px 0 rgba(0, 0, 0, 0.08);
 }
 #myEmail{
-    background-image: linear-gradient(180deg, #2567ba, rgba(53, 193, 248, 0.75),#2567ba);
+    background-image: linear-gradient(180deg, #163C6A, rgba(31, 143, 187, 0.75),#163C6A);
     box-shadow: 0 2.21px 5.1px 0 rgba(0, 0, 0, 0.14), 0 2px 10px 0 rgba(0, 0, 0, 0.14);
     border: 1px solid rgb(10, 40, 68);
     border-radius: 1.25%;
@@ -790,7 +790,7 @@ body > main > div.portfolioPages > ul > li:nth-child(5) > h5 > a:hover{
     text-align: center;
 }
 #myName{
-    background-image: linear-gradient(180deg, #2567ba, rgba(57, 189, 241, 0.75),#2567ba);
+    background-image: linear-gradient(180deg, #163C6A, rgba(31, 143, 187, 0.75),#163C6A);
     border-radius: 2.25%;
     box-shadow: 0 2.2px 5px 0 rgba(0, 0, 0, 0.14), 0 2px 10px 0 rgba(0, 0, 0, 0.14);
     border: 1px solid rgb(10, 40, 68);
@@ -825,7 +825,7 @@ tbody tr{
 
 @media only screen and (max-width: 750px){
     caption{
-        color: #ba7825;
+        color: #e9c18f;
         margin-top: -30px;
     }
     #aboutPicture{
@@ -882,4 +882,25 @@ body > main > div.portfolioPages > ul > li:nth-child(4) > h5 {
 }
 body > main > div.portfolioPages > ul > li:nth-child(5) > h5{
     margin-left: -21px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #163C6A;
+    color: #e5ecf5;
+}
+/* Manjeet background color*/
+body > main > div.portfolioPages > ul > li:nth-child(4) {
+    background-color: black;
+}
+/* VT323 background color*/
+body > main > div.portfolioPages > ul > li:nth-child(2) {
+    background-color: black;
+}
+
+
+body > main > div.portfolioPages > ul > li:nth-child(2) > h5{
+    color: #e5ecf5;
+}
+#location2{
+    color: white;
 }

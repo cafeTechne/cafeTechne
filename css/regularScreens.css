@@ -233,8 +233,8 @@ select {
 #mySubmit {
     margin-top: 15px;
     margin-bottom: 20px;
-    background-image: linear-gradient(to right, rgb(121, 195, 231), rgb(211, 234, 248));
-    color: black;
+    background-image: linear-gradient(to right, #163C6A, rgb(89, 137, 160));
+    color: white;
 }
 
 thead th,
@@ -245,7 +245,7 @@ tfoot td {
 }
 
 tbody tr:nth-child(odd) {
-    background-color: #2567ba;
+    background-color: #163C6A;
     color: #e5ecf5;
 }
 

@@ -190,7 +190,7 @@ table tbody tr td {
 caption h2 {
     font-size: 3rem;
     margin-bottom: 0px;
-    margin-top: 50px;
+    margin-top: 70px;
     margin-left: 0px;
     color: #2f2f2f;
 }
@@ -347,4 +347,8 @@ body > main > div.portfolioPages > ul > li:nth-child(4) > h5 {
     margin-top: 10px;
     font-size: 1rem;
     margin: 0px 5px 30px -21px;
+}
+tbody tr:nth-child(odd) {
+    background-color: #163C6A;
+    color: #e5ecf5;
 }
