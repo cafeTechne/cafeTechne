@@ -616,6 +616,12 @@ display: none;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     
 }
+.panelForAlternateListItem{ 
+    background-color: black;
+    border-radius: .71%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    
+}
 
 .portfolioCard:first-child{
     margin-top: 150px;
@@ -744,6 +750,7 @@ body > main > div.portfolioPages > ul > li:nth-child(4) > h5{
 #bandSiteTemplateHeader{
     color: #F273BC;/*kept for reference*/
     color: #a0eea7;
+    
 }
 body > main > div.portfolioPages > ul > li:nth-child(4) > h5 {
     color: #F273BC;
@@ -870,7 +877,7 @@ tbody tr{
     border: 1px solid rgb(22, 62, 100);
 }
 body > main > div.portfolioPages > ul > li:nth-child(1) > h5{
-    padding: 0px 105px 30px 155px;
+    padding: 0px 60px 30px 112px;
     font-size: .9rem;
 }
 body > main > div.portfolioPages > ul > li:nth-child(4) > h5 {

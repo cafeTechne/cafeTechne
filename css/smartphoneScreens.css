@@ -350,10 +350,28 @@ margin-bottom: 0px;
 font-size: .9rem;
 }
 body > main > div.portfolioPages > ul > li:nth-child(1) > h5{
-    padding: 0px 50px 30px 75px;
-    margin: 0px 50px 30px 40px;
+    padding: 0px 15px 15px 15px;
+    margin: 0px 0px 0px 0px;
     font-size: 1rem;
-    
+    color: rgb(26, 26, 26);
+}
+body > main > div.portfolioPages > ul > li:nth-child(3) > h5{
+    padding: 0px 15px 15px 15px;
+    margin: 0px 0px 0px 0px;
+    font-size: 1rem;
+    color: rgb(26, 26, 26);
+}
+body > main > div.portfolioPages > ul > li:nth-child(5) > h5{
+    padding: 0px 15px 15px 15px;
+    margin: 0px 0px 0px 0px;
+    font-size: 1rem;
+    color: rgb(26, 26, 26);
+}
+body > main > div.portfolioPages > ul > li:nth-child(6) > h5{
+    padding: 0px 15px 15px 15px;
+    margin: 0px 0px 0px 0px;
+    font-size: 1rem;
+    color: rgb(26, 26, 26);
 }
 body > main > div.portfolioPages > ul > li:nth-child(1){
 
@@ -369,4 +387,10 @@ header #brandName {
     margin-bottom: 1px;
     font-size: 2.5rem;
     display: inline-block;
+}
+#bandSiteTemplateHeader{
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.2;
+    margin-bottom: 8px;
 }
