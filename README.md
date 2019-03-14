@@ -2,6 +2,6 @@
 
 HTML, CSS & Javascript for my landing page. 
 
-http://cafetechne.com
+https://cafetechne.com
 
 MIT License.
